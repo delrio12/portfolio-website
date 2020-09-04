@@ -1,0 +1,45 @@
+.about {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    margin: 0 auto;
+    flex-direction: column;
+    color: var(--color-font);
+    text-align: center;
+    width: 700px;
+  }
+
+  .about__me {
+    margin: 20% 40px 40px;
+    display: block;
+    border-style: none none solid none;
+    border-color: var(--color-font);
+    border-width: 0.05cm;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  .about__me__name {
+    margin-bottom: 40px;
+    font-size: 50pt;
+    font-weight: normal;
+  }
+  .about__me__description {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 16pt;
+    font-weight: lighter;
+  }
+
+  .about__me__picture {
+    margin-bottom: 40px;
+    border-radius: 50%;
+  }
+
+  .about__me__social {
+    display: block;
+  }
+
+  .about__me__social__icons {
+    padding: 20px 20px;
+    color: #ffffff;
+  }

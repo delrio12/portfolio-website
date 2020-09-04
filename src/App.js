@@ -1,26 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './App.css';
+/*
+import Menu from './Menu';
+import Resume from './Resume';
+*/
+import About from './About';
+/*
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+*/
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+
+class App extends Component {
+  render() {
+    return (
+      <div className="app">
+        {/*<Menu />
         
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        
+        <Resume />
+        
+        */}
+        <About />
+        {/* <Portfolio />
+        <Contact /> */}
+       
+      </div>
+    );
+  }
 }
-
+  
 export default App;
