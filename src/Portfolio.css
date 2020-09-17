@@ -1,0 +1,49 @@
+.portfolio {
+    
+    background-color: var(--color-background);
+    display: block;
+    color: var(--color-title);
+    height: 100%;
+    width: 100%;
+    padding: 0 65px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+  }
+
+.portfolio__description {
+    margin: 50px auto 20px;
+    display: block;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 1px;
+  }
+
+  .portfolio__description h1 {
+    letter-spacing: 3px;
+  }
+
+  .portfolio__description p {
+    padding: 30px 0 0 120px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: left;
+  }
+
+.portfolio__project {
+      display: inline-block;
+      width: 400px;
+      margin: 40px 30px 0px 30px;
+    
+  }
+
+  .profile-pic {
+      height: 200px;
+  }
+
+  .portfolio__project__description {
+    text-align: justify;
+    line-height: 150%;
+  }
+  .portfolio__project__title {
+    font-weight: 300;
+  }

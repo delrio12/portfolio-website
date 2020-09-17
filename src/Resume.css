@@ -1,0 +1,13 @@
+.resume {
+  background-color: blue;
+  display: block;
+  color: var(--color-title);
+  height: 100%;
+  width: 100%;
+  padding: 0 65px;
+  text-align: center;
+}
+
+  .resume__education {
+
+  }
