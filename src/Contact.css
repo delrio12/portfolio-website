@@ -2,20 +2,20 @@
     background-color: var(--color-description);
     margin-top: 100px;
     font-family: 'Rubik', sans-serif;
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     flex-direction: column;
     color: black;
     text-align: center;
     height: 100%;
     width: 100%;
-    padding: 0 40px;
+    padding: 0px 40px;
   }
 
   .contact__title {
     font-size: 3rem;
     font-weight: 600;
-    margin: 50px auto 20px;
+    margin: 100px auto 20px;
     letter-spacing: 1px;
 
   }

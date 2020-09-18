@@ -8,6 +8,7 @@ import Resume from './Resume';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Header from './Header';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
@@ -20,7 +21,7 @@ class App extends Component {
         <div className="portfolio"><Portfolio /></div>
         <div className="contact"><Contact /></div>
         </AwesomeSlider>
-       
+        <Footer />
       </div>
     );
   }

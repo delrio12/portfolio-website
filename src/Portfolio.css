@@ -11,15 +11,17 @@
   }
 
 .portfolio__description {
-    margin: 50px auto 20px;
+    margin: 100px auto 20px;
     display: block;
     font-weight: 600;
     line-height: 140%;
     letter-spacing: 1px;
+
   }
 
   .portfolio__description h1 {
     letter-spacing: 3px;
+
   }
 
   .portfolio__description p {
@@ -28,7 +30,9 @@
     font-weight: 300;
     text-align: left;
   }
-
+.portfolio__projects {
+  margin-top: 100px;
+}
 .portfolio__project {
       display: inline-block;
       width: 400px;
@@ -36,14 +40,18 @@
     
   }
 
+
   .profile-pic {
       height: 200px;
   }
 
-  .portfolio__project__description {
+  .portfolio__project__description p {
     text-align: justify;
     line-height: 150%;
   }
-  .portfolio__project__title {
+  .portfolio__project__description h1 {
     font-weight: 300;
   }
+
+
+  

@@ -1,5 +1,5 @@
 .resume {
-  background-color: blue;
+  background-color:lightgreen;
   display: block;
   color: var(--color-title);
   height: 100%;
@@ -8,6 +8,26 @@
   text-align: center;
 }
 
-  .resume__education {
+.resume__picture {
+    margin: 100px auto 40px;
+    border-radius: 50%;
+    width: 200px;
+}
 
-  }
+.resume__experience {
+  width: 100%;
+  padding: 0 300px;
+  font-size: 30px;
+  text-align: justify;
+  margin-bottom: 100px;
+}
+
+.resume__education__element {
+  display: inline-block;
+  text-align: left;
+  margin: 40px 60px 40px 60px;
+}
+
+.hvr-grow {
+  font-size: 20px;
+}
