@@ -32,9 +32,10 @@
     font-size: 4.5rem;
     font-weight: normal;
   }
+  
   .about__description {
     font-family: 'Rubik', sans-serif;
-    color: #b1c7c5;
+    color: var(--color-subtitle);
     margin-bottom: 40px;
     font-size: 2rem;
     font-weight: 300;
@@ -63,7 +64,7 @@
   transition-duration: 0.3s;
   transition-property: transform;  
   
-  color: var(--color-description);
+  color: var(--color-subtitle);
   padding-top: 10px;
   padding-bottom: 15px;  
 }
@@ -104,4 +105,9 @@
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
+}
+
+/* Animate.css animation */
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 3s;
 }

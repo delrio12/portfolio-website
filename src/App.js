@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
 
 import './App.css';
 import About from './About';
@@ -15,12 +13,10 @@ class App extends Component {
     return (
       <div className="app">
         <Header />
-        <AwesomeSlider >
         <div className="about"><About /></div>
         <div className="resume"><Resume /></div>
         <div className="portfolio"><Portfolio /></div>
         <div className="contact"><Contact /></div>
-        </AwesomeSlider>
         <Footer />
       </div>
     );

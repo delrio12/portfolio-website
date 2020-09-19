@@ -50,8 +50,8 @@
     font-size: 1.75rem;
     font-weight: 400;
     padding: 15px;
-    background-color: #50B7F5;
-    border: solid #50B7F5 2px;
+    background-color: var(--color-borders);
+    border: solid var(--color-borders) 2px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -60,9 +60,9 @@
     }
     
     .button__primary:hover {
-    background: #F9F9F9;
-    border: solid #50B7F5 2px;
+    background: var(--color-title);
+    border: solid var(--color-borders) 2px;
     border-radius: 50px;
     text-decoration: none;
-    color: #50B7F5;
+    color: var(--color-borders);
     }

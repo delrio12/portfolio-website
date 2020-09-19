@@ -1,9 +1,15 @@
 body {
-  --color-main:#2D82B7;
-  --color-background: #000000;
+  --color-background: #040c0f;
+  --color-background2:#16202a;
+
+  --color-main:#292F36;
+  --color-second: #5c748d;
+
   --color-title: #ffffff;
-  --color-description: #D6EFFF;
-  --color-borders: #747C92;
+  --color-subtitle: #D6EFFF;
+
+
+  --color-borders:	#1cd3bd;
 
   
 }

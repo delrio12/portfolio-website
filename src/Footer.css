@@ -1,8 +1,7 @@
 .footer {
     height: 100%;
     width: 100%;
-    background: salmon;
-    
+    background-color: var(--color-background2);
 }
 
 .footer__copyright h3, .footer__copyright a {
@@ -14,6 +13,9 @@
     padding-right: 10px;
 }
 
+.footer__copyright a:hover {
+    color: var(--color-background);
+}
 
 
 .footer__contact {
@@ -33,15 +35,16 @@
     display: inline-block;
     width: 100%;
     text-align: center;
-    background: grey;
+    background: var(--color-borders);
+    
     
 }
 
 .awssld__bullets .awssld__bullets--active {
     transform: scale(0.75);
-    background: red;
+    background: var(--color-borders);
 }
 
 .awssld__bullets button {
-    background: blue;
+    background: white;
 }
