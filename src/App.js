@@ -7,8 +7,25 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Header from './Header';
 import Footer from './Footer';
+import SocialBar from './SocialBar';
 
-class App extends Component {
+
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state={apiResponse:""};
+  }
+
+  callAPI(){
+    fetch("http://localhost:9000/testAPI")
+    .then(res => res.text())
+    .then(res => this.setState({apiResponse: res}));
+  }
+
+  componentWillMount(){
+    this.callAPI();
+  }
+
   render() {
     return (
       <div className="app">
@@ -18,6 +35,8 @@ class App extends Component {
         <div className="portfolio"><Portfolio /></div>
         <div className="contact"><Contact /></div>
         <Footer />
+        <SocialBar/>
+        <p>{this.state.apiResponse}</p>
       </div>
     );
   }

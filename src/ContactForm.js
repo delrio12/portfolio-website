@@ -26,7 +26,7 @@ class ContactForm extends React.Component {
             </div>
             <div className="contactForm__group">
               <label className="contactForm__label"> HOW CAN I HELP? </label>  
-                 <textarea className="contactForm__message" rows="4"  value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+                 <textarea className="contactForm__message" rows="1"  value={this.state.message} onChange={this.onMessageChange.bind(this)} />
             </div>
             <button type="submit" className="button__primary">Send Message</button>
         </form>

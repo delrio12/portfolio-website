@@ -11,7 +11,8 @@ function About() {
     return (
         <div className="about">
             <div className="about--left"> 
-                <h1 className="animate__animated animate__fadeInUp about__name">Hey, I'm Andres Del Rio.</h1>
+                <h2 className="animate__animated animate__fadeInUp about__description"> Hey, I'm </h2>
+                <h1 className="animate__animated animate__fadeInUp about__name">Andres Del Rio.</h1>
                 <h4 className="animate__animated animate__fadeInUp about__description">A Front End Developer &amp; Programmer based in Canada. I enjoy creating websites, applications, or anything in between. I specialize in ReactJS.</h4>
             </div>
             <div className="about--right"> 

@@ -3,6 +3,9 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--color-background2);
+    padding: 20px 20px 40px;
+    border-radius: 10px;
     
 }
 
@@ -20,31 +23,30 @@
     font-family: 'Rubik', sans-serif;
     padding-bottom: 10px;
     display: block;
-    font-weight: 600;
+    font-weight: 300;
     text-align: left;
-    color: grey;
+    color: var(--color-subtitle);
     font-size: 1.25rem;
 }
 .contactForm__name, .contactForm__email, .contactForm__message{
     box-sizing: border-box;
     font-size: 1.25rem;
-    height: 70px;
     border: 2px solid var(--color-borders);
     border-radius: 10px;
     background-color: var(--color-description);
     font-family: 'Rubik', sans-serif;
     padding: 10px;
-    
+    color: white;
 }
 
 .contactForm__message {
     width: 100%;
-    height: 240px;
+    height: 250px;
     
 }
 
 .button__primary {
-    border-radius: 45px;
+    border-radius: 20px;
     color: #FFFFFF;
     font-family: 'Rubik', sans-serif;
     font-size: 1.75rem;
@@ -60,9 +62,9 @@
     }
     
     .button__primary:hover {
-    background: var(--color-title);
+    background: var(--color-background2);
     border: solid var(--color-borders) 2px;
-    border-radius: 50px;
+    border-radius: 20px;
     text-decoration: none;
-    color: var(--color-borders);
+    color: var(--color-subtitle);
     }

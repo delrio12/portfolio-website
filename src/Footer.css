@@ -1,43 +1,32 @@
 .footer {
     height: 100%;
     width: 100%;
-    background-color: var(--color-background2);
+    background-color: var(--color-background);
+    
 }
 
-.footer__copyright h3, .footer__copyright a {
+.footer__copyright a {
     display: inline-block;
     margin: 0 auto;
     color: black;
     font-size: 14px;
-    letter-spacing: 1px;
-    padding-right: 10px;
+    letter-spacing: 3px;
+    color: var(--color-subtitle);
+    padding-bottom: 40px;
 }
 
 .footer__copyright a:hover {
-    color: var(--color-background);
+    color: var(--color-title);
 }
 
 
-.footer__contact {
-    text-align: center;
-    padding-top: 40px;
-}
-
-.footer__contact__item {
-    display: inline-block;
-    color: white;
-    width: 400px;
-    text-align: left;
-    
-}
 
 .footer__copyright {
     display: inline-block;
     width: 100%;
     text-align: center;
-    background: var(--color-borders);
-    
-    
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
 }
 
 .awssld__bullets .awssld__bullets--active {

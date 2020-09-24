@@ -10,14 +10,15 @@ function Header() {
             </a>
         </div>
         <div className="header__navbar">
-                    <li className="header__navbar__item">
-                        <a className="hvr-grow hvr-underline-from-center" href="/Portfolio">
-                            Projects
-                        </a>
-                    </li>
+                    
                     <li className="header__navbar__item">
                         <a className="hvr-grow hvr-underline-from-center" href="/Resume">
                             About
+                        </a>
+                    </li>
+                    <li className="header__navbar__item">
+                        <a className="hvr-grow hvr-underline-from-center" href="/Portfolio">
+                            Projects
                         </a>
                     </li>
                     <li className="header__navbar__item">
