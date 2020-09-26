@@ -1,115 +1,128 @@
-  .about {
-    background-color: var(--color-background);
-    display: block;
-    color: var(--color-title);
-    height: 100%;
-    width: 100%;
-    padding: 00px 65px 100px 65px;
-    text-align: center;
-  }
-
-  .about--left {
-    display: inline-block;
-    width: 50%;
-    text-align: left;
-    padding-top: 100px;
-    padding-left: 80px;
-    width: 600px;
-    margin-top: 100px;
-    
-  }
-
-  .about--right {
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-    padding-top: 100px;
-    padding-left: 60px;
-  }
-
-  .about__name {
-    font-family: 'Rubik', sans-serif;
-    margin-bottom: 35px;
-    font-size: 4.5rem;
-    font-weight: bold;
-    color: var(--color-borders);
-  }
-  
-  .about__description {
-    font-family: 'Rubik', sans-serif;
-    color: var(--color-subtitle);
-    margin-bottom: 40px;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 140%;
-  }
-
-  .about__picture {
-    margin-bottom: 40px;
-    border-radius: 50%;
-    width: 300px;
-  }
-
-  .about__social {
-    display: block;
-  }
-
-  /* Hover Grow Effect */
-.hvr-grow {
-  margin: 10px 25px;
-  display: inline-block;
-  vertical-align: middle;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform;  
-  
+.about {
+  background-color: var(--color-background);
+  font-family: 'Rubik', sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: 60px 65px;
+  text-align: center;
   color: var(--color-subtitle);
-  padding-top: 10px;
-  padding-bottom: 15px;  
 }
 
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-  transform: scale(1.1);
+.about__summary {
+  width: 30%;
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.about__summary h1, .about__education h1 {
+  letter-spacing: 1px;
+  display: inline-block;
+  padding-right: 20px;
+  line-height: 200%;
+  font-size: 30px;
+  color: var(--color-borders);
+}
+
+h2 {
   color: var(--color-title);
 }
 
-/* Underline From Center Effect*/
-.hvr-underline-from-center {
+.long-line {
+  width: 60%;
   display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.37);
 }
-.hvr-underline-from-center:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 51%;
-  right: 51%;
-  bottom: 0;
-  background: #2098D1;
-  height: 4px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-  left: 0;
-  right: 0;
+.about__picture {
+    position: relative;
+    display: inline-block;
 }
 
-/* Animate.css animation */
-.animate__animated.animate__fadeInUp {
-  --animate-duration: 3s;
+.image {
+    margin: 100px auto 40px;
+    border-radius: 50%;
+    width: 250px;
+    display: inline-block;
 }
+/* Picture effect on hover  */
+.overlay {
+  margin: 100px auto 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: .5s ease;
+  background-color: var(--color-borders);
+}
+
+.about__picture:hover .overlay {
+  opacity: 0;
+}
+.about__download {
+  display: inline-block;
+}
+.about__education {
+    width: 70%;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 40px;
+    display: inline-block;
+    font-weight: 300;
+    padding-left: 200px;
+}
+
+.about__education p {
+  line-height: 120%;
+}
+
+.about__education.long-line {
+  width: 90%;
+}
+
+.about__education__element {
+  display: inline-block;
+  text-align: left;
+  height: 240px;
+  width: 45%;
+  padding: 20px 20px 20px 20px;
+  margin: 40px 40px 10px 0px ;
+  background-color: var(--color-background2);
+  float: left;
+  border-radius: 20px;
+}
+
+
+
+.button__primary {
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  padding: 15px;
+  background-color: var(--color-background) !important;
+  border: solid var(--color-borders) 2px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+
+  }
+  
+  .button__primary:hover {
+  background-color: var(--color-background2) !important;
+  border: solid var(--color-borders) 2px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--color-title) !important;
+  
+  }
+

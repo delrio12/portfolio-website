@@ -1,30 +1,32 @@
 import React from "react";
 import "./Header.css";
 
+import { Link } from 'react-router-dom';
+
 function Header() {
   return (
     <header className="header">
         <div className="header__logo">
-            <a className=" hvr-grow hvr-underline-from-center" href="https://andresdelrio.dev">
+            <a className=" hvr-grow hvr-underline-from-center" href="/">
                 DEL RIO
             </a>
         </div>
         <div className="header__navbar">
                     
                     <li className="header__navbar__item">
-                        <a className="hvr-grow hvr-underline-from-center" href="/Resume">
+                        <Link className="hvr-grow hvr-underline-from-center" to="/About">
                             About
-                        </a>
+                        </Link>
                     </li>
                     <li className="header__navbar__item">
-                        <a className="hvr-grow hvr-underline-from-center" href="/Portfolio">
+                        <Link className="hvr-grow hvr-underline-from-center" to="/Portfolio">
                             Projects
-                        </a>
+                        </Link>
                     </li>
                     <li className="header__navbar__item">
-                        <a className="hvr-grow hvr-underline-from-center" href="/Contact">
+                        <Link className="hvr-grow hvr-underline-from-center" to="/Contact">
                             Contact
-                        </a>
+                        </Link>
                     </li>
         </div>
     </header>

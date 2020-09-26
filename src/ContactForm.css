@@ -52,7 +52,7 @@
     font-size: 1.75rem;
     font-weight: 400;
     padding: 15px;
-    background-color: var(--color-borders);
+    background-color: var(--color-background2) !important;
     border: solid var(--color-borders) 2px;
     text-decoration: none;
     display: inline-block;
@@ -62,7 +62,7 @@
     }
     
     .button__primary:hover {
-    background: var(--color-background2);
+    background-color: var(--color-borders) !important;
     border: solid var(--color-borders) 2px;
     border-radius: 20px;
     text-decoration: none;
