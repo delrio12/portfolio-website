@@ -82,3 +82,26 @@
 .portfolio__project:hover .portfolio__project__image__overlay {
   opacity: 0.7;
 }
+
+/* Small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .portfolio__description p {
+    padding: 10px 0 50px 0px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .portfolio__description p {
+    padding: 30px 0 80px 160px;
+    }
+ 
+}
+
+/* Large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .portfolio__description p {
+    padding: 30px 0 80px 190px;
+    }
+}

@@ -1,58 +1,79 @@
-  .home {
-    background-color: var(--color-background);
-    display: block;
-    color: var(--color-title);
-    height: 100%;
-    width: 100%;
-    padding: 230px 65px 100px 65px;
-    text-align: center;
-  }
+.home {
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-title);
+  height: 100%;
+  width: 100%;
+}
 
-
-  .home--left {
+.home--left {
     display: inline-block;
-    width: 50%;
     text-align: left;
-    padding-top: 20px;
-    padding-left: 80px;
-    width: 600px;
-    
-  }
+    width: 100%;
+}
 
-  .home--right {
+  /* .home--right {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     text-align: center;
     padding-top: 100px;
     padding-left: 60px;
-  }
+  } */
 
-  .home__name {
-    font-family: 'Rubik', sans-serif;
-    margin-bottom: 35px;
-    font-size: 4.5rem;
-    font-weight: bold;
-    color: var(--color-borders);
+.home__name {
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 35px;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: var(--color-borders);
+}
+
+.home__description {
+  font-family: 'Rubik', sans-serif;
+  color: var(--color-subtitle);
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.home__picture {
+  margin-bottom: 40px;
+  border-radius: 50%;
+  width: 300px;
+}
+
+.home__social {
+  display: block;
+}
+
+
+/* Small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .home {
+    padding: 140px 40px 40px 40px;
+  }
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .home {
+    padding: 200px 100px 100px 100px;
   }
   
-  .home__description {
-    font-family: 'Rubik', sans-serif;
-    color: var(--color-subtitle);
-    margin-bottom: 40px;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 140%;
-  }
+}
 
-  .home__picture {
-    margin-bottom: 40px;
-    border-radius: 50%;
-    width: 300px;
-  }
+/* Large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+     
+    .home {
+      padding: 260px 160px 160px 160px;
+    }
+}
 
-  .home__social {
-    display: block;
-  }
 
   /* Hover Grow Effect */
 .hvr-grow {

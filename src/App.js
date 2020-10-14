@@ -17,17 +17,20 @@ class App extends React.Component {
       <div className="app">
         <Header />
         <Route exact path='/' render={() => (
-            <div className="home"><Home /></div>
+            <Home />
         )}/>
         <Route exact path='/About' render={() => (
-            <div className="about"><About /></div>
+            <About />
         )}/>
         <Route exact path='/Portfolio' render={() => (
-            <div className="portfolio"><Portfolio /></div>
+            <Portfolio />
         )}/>
         <Route exact path='/Contact' render={() => (
-            <div className="contact"><Contact /></div>
+            <Contact />
         )}/>
+        <About />
+        <Portfolio />
+        <Contact />
         <Footer />
         <SocialBar/>
         

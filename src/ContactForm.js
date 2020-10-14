@@ -22,7 +22,7 @@ class ContactForm extends React.Component {
             </div>
             <div className="contactForm__group--half">
               <label className="contactForm__label"> EMAIL </label>
-                <input type="email" className="contactForm__email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                <input required type="email" className="contactForm__email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
             </div>
             <div className="contactForm__group">
               <label className="contactForm__label"> HOW CAN I HELP? </label>  

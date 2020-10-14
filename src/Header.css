@@ -1,22 +1,31 @@
 .header {
     background-color: var(--color-background);
-    font-family: 'Rubik', sans-serif;
-    width: 100%;
-    height: 90px;
-    padding: 20px 120px 20px 120px;
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 999;
-}
+     font-family: 'Rubik', sans-serif;
+     width: 100%;
 
-.header__logo {
-    display: inline-block;
+     height: 100px;
+     padding: 20px 30px 20px 20px;
+     
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+     position: fixed;
+     right: 0;
+     left: 0;
+     z-index: 999;
+ }
+
+ .header__logo {
     font-weight: 600;
     font-size: 2.5rem;
-    text-align: left;
-    width: 30%;
-    letter-spacing: 2px;
+    letter-spacing: 4px;   
+
+}
+
+.header__menu {
+    color: white;
+
 }
 
 .header__navbar {
@@ -27,14 +36,48 @@
     width: 70%;
 }
 
-.header__navbar__item {
+.header__item {
     display: inline-block;
     margin: 0px 30px;     
 }
 
 
-/* Hover Grow Effect */
-.hvr-grow {
+
+/* Small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+   
+    
+    .mobile--hidden {
+        display: none ; 
+    }
+
+    .mobile--unhidden {
+        display: block;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .mobile--hidden {
+        display: none ; 
+    }
+}
+
+/* Large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+       
+    .mobile--hidden {
+        display: block;
+    }
+
+    .mobile--unhidden {
+        display: none !important;
+    }
+}
+
+ /* Hover Grow Effect */
+ .hvr-grow {
     color: var(--color-subtitle);
     padding-top: 10px;
     padding-bottom: 15px; 
@@ -89,3 +132,9 @@
     left: 0;
     right: 0;
   }
+
+
+
+
+
+  

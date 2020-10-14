@@ -14,7 +14,7 @@ function About() {
             </div>
             <div className="about__picture">
                 <img  className="image" src="https://media-exp1.licdn.com/dms/image/C5603AQGFTdhG_IAb8Q/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=VyVOdBS-afK6sFO9C5vHvQi1njYlgMMKWfXhy6WXRSs" alt="Andres" />     
-                {/* <div className="overlay"></div> */}
+                
             </div>  
             <div className="about__education"> 
                 <h1>Education</h1>
