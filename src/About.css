@@ -43,7 +43,7 @@ h2 {
 }
 
 .image {
-    margin: 0px auto 40px;
+    margin: 40px auto;
     border-radius: 50%;
     width: 250px;
     display: inline-block;
@@ -97,7 +97,7 @@ h2 {
   cursor: pointer;
   text-align: center;
   margin-top: 10px;
-
+  
   }
   
   .button__primary:hover {
@@ -127,6 +127,18 @@ h2 {
     width: 100%;
     height: 100%;
   }
+
+  .about__summary {
+    
+    margin-bottom: 0px;
+    margin-right: 0px;
+    
+  }
+
+  .mobile--hidden {
+    display: none;
+  }
+ 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -142,6 +154,10 @@ h2 {
   .about__education {
     padding-left: 200px;
   }
+
+  .mobile--hidden {
+    display: none;
+  }
   
 }
 
@@ -154,5 +170,18 @@ h2 {
   .about__education {
     padding-left: 200px;
   }
+
+  .about__summary {
+    
+    margin-bottom: 100px;
+    margin-right: 100px;
+    
+  }
+
+  .mobile--hidden {
+    display: block;
+  }
+
+
  
 }

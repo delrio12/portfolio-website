@@ -16,22 +16,22 @@ function About() {
                 <img  className="image" src="https://media-exp1.licdn.com/dms/image/C5603AQGFTdhG_IAb8Q/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=VyVOdBS-afK6sFO9C5vHvQi1njYlgMMKWfXhy6WXRSs" alt="Andres" />     
                 
             </div>  
-            <div className="about__education"> 
-                <h1>Education</h1>
-                <div className="long-line"></div>
+            <div className="about__education "> 
+                <div className= "mobile--hidden"> <h1>Education</h1> </div>
+                <div className="long-line mobile--hidden"></div>
                 <div className="about__download">
                     <a className="hvr-grow button__primary" href="https://github.com/delrio12" target="_blank">
                             <GetAppIcon fontSize="larger" /> Resume      
                     </a>
                 </div>
-                <div className="about__education__element">
+                <div className="about__education__element mobile--hidden">
                     <h2> DCS / DEC in Computer Programming </h2>
                     <p> Seneca College, Canada. </p>
                     <p> January 2019 – April 2020 </p>
                     <p> Graduated with Honors: Seneca President´s Honour List Award. </p>
                 </div>
                 
-                <div className="about__education__element">
+                <div className="about__education__element mobile--hidden">
                     <h2> Bachelor’s Degree in Financial Engineering </h2>
                     <p> Autonomous University of Bucaramanga, Colombia. </p>
                     <p> January 2012 – December 2017 </p>

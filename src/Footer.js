@@ -8,7 +8,7 @@ function Footer() {
         <footer className="footer">
             <div className="footer__copyright">
                 <a id="footer-link-react-copyright" href="https://andresdelrio.dev">
-                    <strong> Built by Andres Del Rio ©</strong>
+                    <strong> Built by Andres Del Rio © 2020</strong>
                 </a>
             </div>
             
