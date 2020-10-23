@@ -1,0 +1,190 @@
+/********************************************************/
+/******* Large devices (Laptops, PCs 960x and up) *******/
+/********************************************************/
+
+.header {
+    background-color: var(--color-background);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.header__logo {
+    color: var(--color-title);
+    justify-self: start;    
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 4px;   
+}
+
+.header__navbar {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.header__item {
+    display: flex;
+    align-items: center;  
+}
+
+.header__menu {
+    color: white;
+    display: none;
+
+}
+
+.header__links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0rem;
+}
+
+/********************************************************/
+/*** Small and medium devices (phones, 960x and down) ***/
+/********************************************************/
+
+@media screen and (max-width: 960px) {
+
+    .header__item {
+        position: relative;
+      }
+    
+    .header__navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        padding-left: 0px;
+      }
+    
+      .header__navbar.active {
+        background: var(--color-background2);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+      }
+    
+      .header__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+      }
+
+      .header__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+      }
+    
+      .header__menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+    
+      .fa-times {
+        color: #fff;
+        font-size: 2rem;
+      }
+
+      .hvr-underline-from-center:before {
+          display: none;
+      }
+    
+}
+
+
+
+
+/********************************************************/
+/********************* Font-Effects *********************/
+/********************************************************/
+
+/******************* Hover Grow Effect ******************/
+ .hvr-grow {
+    color: var(--color-subtitle);
+    padding-top: 10px;
+    padding-bottom: 15px; 
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;  
+    font-size: 20px;
+     
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+    color: var(--color-title);
+}
+/************ Underline From Center Effect **************/
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: var(--color-borders);
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+
+
+
+
+
+
+  
