@@ -105,12 +105,10 @@
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
+        
       }
     
-      .fa-times {
-        color: #fff;
-        font-size: 2rem;
-      }
+      
 
       .hvr-underline-from-center:before {
           display: none;
