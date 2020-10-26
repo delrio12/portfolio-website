@@ -15,6 +15,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
+         {/* BrowserRouter allows us to build a single-page web application with 
+        navigation without the page refreshing as the user navigates */}
         <BrowserRouter>
         <Navbar />
           {/* <Route exact path='/' component={Home}/> 
@@ -22,11 +24,11 @@ class App extends React.Component {
           <Route path='/Portfolio' component={Portfolio} />  
           <Route path='/Contact' component={Contact} /> */}
           <Home /> 
-          <About /> 
+          <About />
           <Portfolio />
           <Contact />
-          <Footer />
-          <SocialBar />
+           <Footer />
+           <SocialBar />
         </BrowserRouter>
         {/*   */}
         

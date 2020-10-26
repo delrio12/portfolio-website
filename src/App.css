@@ -2,7 +2,8 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-  margin: 0;
+  margin: 20px;
+  background-color: var(--color-background);
   
   --color-background: #040c0f;
   --color-background2:#16202a;
@@ -15,10 +16,13 @@ body {
 
 
   --color-borders:	#1cd3bd;
+
+  
   
 }
 
 .app {
+
   display: block;
   
 }
@@ -29,14 +33,5 @@ body {
   {
     width: 100%;
     display: none;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-  .socialbar {
-      width: 100%;
-      display: block; 
   }
 }

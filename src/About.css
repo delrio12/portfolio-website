@@ -1,3 +1,7 @@
+/********************************************************/
+/******* Large devices (Laptops, PCs 960x and up) *******/
+/********************************************************/
+
 .about {
   color: var(--color-subtitle);
   background-color: var(--color-background);
@@ -51,6 +55,8 @@ h2 {
 
 .about__download {
   display: inline-block;
+  width: 100%;
+  justify-items: center;
 }
 .about__education {
 
@@ -93,7 +99,8 @@ h2 {
   background-color: var(--color-background) !important;
   border: solid var(--color-borders) 2px;
   text-decoration: none;
-  display: inline-block;
+  display: grid;
+  align-items: center;
   cursor: pointer;
   text-align: center;
   margin-top: 10px;
@@ -112,10 +119,14 @@ h2 {
 
   /* CONSTRUCTION AREA  - EVERYTHING BELOW THIS LINE IS ONGOING WORK*/ 
 
+/*************************************************************/
+/* Small and medium devices (phones, tablets, 960x and down) */
+/*************************************************************/
+
 /* Small devices (phones, 768px and down) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   .about {
-    padding: 60px 40px 60px 65px;
+    padding: 60px 50px 60px 10px;
   }
 
   .about__education {
@@ -138,28 +149,19 @@ h2 {
   .mobile--hidden {
     display: none;
   }
+
+  .about__picture {
+    padding-top: 0px;
+  }
  
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .about {
-    padding: 60px 65px 65px 65px;
-  }
-
-  .about__education {
+  .about__download {
+    display: grid;
     width: 100%;
+    justify-items: center;
   }
-
-  .about__education {
-    padding-left: 200px;
-  }
-
-  .mobile--hidden {
-    display: none;
-  }
-  
 }
+
+
 
 /* Large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {

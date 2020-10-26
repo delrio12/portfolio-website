@@ -5,6 +5,7 @@
 .header {
     background-color: var(--color-background);
     height: 100px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,9 +52,9 @@
     padding: 0.5rem 0rem;
 }
 
-/********************************************************/
-/*** Small and medium devices (phones, 960x and down) ***/
-/********************************************************/
+/*************************************************************/
+/* Small and medium devices (phones, tablets, 960x and down) */
+/*************************************************************/
 
 @media screen and (max-width: 960px) {
 
