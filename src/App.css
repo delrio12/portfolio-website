@@ -27,13 +27,12 @@ body {
   
 }
 
-/* Small devices (phones, 768px and down) */
-@media only screen and (max-width: 768px) {
+/* Small and Medium devices (phones, 960px and down) */
+@media only screen and (max-width: 960px) {
   .socialbar
   {
     width: 100%;
     display: none;
-    
   }
 
   body {

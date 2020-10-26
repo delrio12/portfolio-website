@@ -15,12 +15,12 @@
 .header__logo {
     color: var(--color-title);
     justify-self: start;    
-    margin-left: 20px;
+    margin-left: 1rem;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
-    letter-spacing: 4px;   
+    letter-spacing: 0.4rem;   
 }
 
 .header__navbar {
@@ -33,6 +33,7 @@
     margin-right: 2rem;
     text-align: center;
     font-weight: 300;
+    
 }
 
 .header__item {
@@ -49,7 +50,7 @@
 .header__links {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 1.5rem;
 }
 
 /*************************************************************/
@@ -137,7 +138,7 @@
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform;  
-    font-size: 20px;
+    font-size: 1.2rem;
      
 }
 
