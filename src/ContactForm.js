@@ -1,15 +1,41 @@
 import React from 'react';
-import './ContactForm.css';
+import axios from 'axios';
+import './ContactForm.css'
 
 class ContactForm extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        name: '',
-        email: '',
-        message: ''
-      }
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      email: "",
+      message: ""
     }
+  }
+
+  handleSubmit(e){
+    e.preventDefault();
+    axios({
+      method: "POST", 
+      url:"http://localhost:3002/send", 
+      data:  this.state
+    }).then((response)=>{
+      if (response.data.status === 'success') {
+        document.getElementById("Sent").classList.add('unhidden');
+        document.getElementById("Sent").classList.remove('hidden');
+        
+        this.resetForm()
+      } else if (response.data.status === 'fail') {
+        document.getElementById("NotSent").classList.add('unhidden');
+        document.getElementById("NotSent").classList.remove('hidden');
+      }
+    })
+  }
+
+  resetForm(){
+    this.setState({name: '', email: '', message: ''})
+  }
+  
   
   render() {
    return(
@@ -29,6 +55,17 @@ class ContactForm extends React.Component {
                  <textarea className="contactForm__message" rows="1"  value={this.state.message} onChange={this.onMessageChange.bind(this)} />
             </div>
             <button type="submit" className="button__primary">Send Message</button>
+            <div id="Sent"className="hidden">
+              <br/>
+              <h3>Thank you</h3>
+              <p>
+              Thanks for contacting me, I will get back in touch with you soon.
+              </p>
+            </div>
+            <div id="NotSent" className="hidden">
+              <br/>
+              <h1>Unable to send</h1>
+            </div>
         </form>
       </div>
    );
@@ -45,10 +82,6 @@ class ContactForm extends React.Component {
     onMessageChange(event) {
       this.setState({message: event.target.value})
     }
-  
-  handleSubmit(event) {
-
-  }
   }
   
   export default ContactForm;

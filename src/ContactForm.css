@@ -19,6 +19,14 @@
     
 }
 
+.hidden {
+    display: none;
+}
+
+.unhidden {
+    display: block;
+}
+
 .contactForm__label {
     font-family: 'Rubik', sans-serif;
     padding-bottom: 10px;
