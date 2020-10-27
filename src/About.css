@@ -13,11 +13,11 @@
 }
 
 .about__summary {
-  width: 100%;
+  width: 90%;
   font-size: 22px;
   text-align: left;
   margin-bottom: 100px;
-  margin-right: 100px;
+  margin-left: 100px;
   display: inline-block;
   font-weight: 300;
   line-height: 160%;
@@ -47,7 +47,7 @@ h2 {
 }
 
 .image {
-    margin: 40px auto;
+    margin: 20px auto;
     border-radius: 50%;
     width: 250px;
     display: inline-block;
@@ -83,7 +83,7 @@ h2 {
   padding: 20px 20px 20px 20px;
   margin: 40px 40px 10px 0px ;
   background-color: var(--color-background2);
-  float: left;
+  float: center;
   border-radius: 20px;
 }
 
