@@ -1,10 +1,9 @@
 .contactForm {
     display: inline-block;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px 10px;
+
     background-color: var(--color-background2);
-    padding: 20px 20px 40px;
+    
     border-radius: 10px;
     
 }
@@ -67,6 +66,7 @@
     cursor: pointer;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px;
     }
     
     .button__primary:hover {
@@ -75,4 +75,19 @@
     border-radius: 20px;
     text-decoration: none;
     color: var(--color-subtitle);
+    }
+    /* Small and Medium devices (landscape tablets, 960px and up) */
+    @media only screen and (max-width: 960px) {
+        .button__primary {
+            font-size: 1rem;
+        }
+
+        .contactForm__label {
+            font-size: 1rem;
+        }
+
+        .contactForm__name, .contactForm__email, .contactForm__message{
+            font-size: 1rem;
+        }
+
     }

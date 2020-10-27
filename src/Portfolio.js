@@ -3,12 +3,11 @@ import './Portfolio.css';
 
 function Portfolio() {
     return (
-        <div className="portfolio">
+        <div className="portfolio animate__animated animate__fadeInUp">
 
             <div className="portfolio__description">
                 <h1>My Projects</h1>
                 <div className="long-line"></div>
-                <p> Take a look at some of my recent works.</p>
             </div>
             <div className ="portfolio__projects">
 

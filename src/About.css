@@ -7,17 +7,16 @@
   background-color: var(--color-background);
   font-family: 'Rubik', sans-serif;
   height: 100%;
-  width: 100%;
   text-align: center;
+  margin: 6rem 8rem 6rem;
   
 }
+
 
 .about__summary {
   width: 90%;
   font-size: 22px;
   text-align: left;
-  margin-bottom: 100px;
-  margin-left: 100px;
   display: inline-block;
   font-weight: 300;
   line-height: 160%;
@@ -30,6 +29,7 @@
   line-height: 200%;
   font-size: 30px;
   color: var(--color-borders);
+  
 }
 
 h2 {
@@ -37,11 +37,12 @@ h2 {
 }
 
 .long-line {
-  width: 60%;
+  width: 70%;
   display: inline-block;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.37);
 }
 .about__picture {
+    width: 100%;
     position: relative;
     display: inline-block;
 }
@@ -54,17 +55,18 @@ h2 {
 }
 
 .about__download {
-  display: inline-block;
-  width: 100%;
-  justify-items: center;
+  display: inline-flex;
+  justify-content: right;
+  margin-left: 20px;
 }
 .about__education {
-
-    font-size: 20px;
-    text-align: center;
+    width: 100%;
+    font-size: 22px;
+    text-align: left;
     margin-bottom: 40px;
     display: inline-block;
     font-weight: 300;
+    line-height: 160%;
 }
 
 .about__education p {
@@ -76,18 +78,20 @@ h2 {
 }
 
 .about__education__element {
-  display: inline-block;
+  display:  block;
   text-align: center;
-  height: 240px;
-  width: 45%;
+  height: 100%;
+  width: 40%;
   padding: 20px 20px 20px 20px;
   margin: 40px 40px 10px 0px ;
   background-color: var(--color-background2);
-  float: center;
+  
   border-radius: 20px;
 }
 
-
+.mobile--hidden {
+  display: inline-block;
+}
 
 .button__primary {
   border-radius: 20px;
@@ -99,10 +103,9 @@ h2 {
   background-color: var(--color-background) !important;
   border: solid var(--color-borders) 2px;
   text-decoration: none;
-  display: grid;
-  align-items: center;
-  cursor: pointer;
-  text-align: center;
+  
+  
+  
   margin-top: 10px;
   
   }
@@ -126,7 +129,7 @@ h2 {
 /* Small devices (phones, 768px and down) */
 @media only screen and (max-width: 960px) {
   .about {
-    padding: 60px 50px 60px 10px;
+    margin: 3rem 2rem 4rem;
   }
 
   .about__education {
@@ -143,6 +146,7 @@ h2 {
     
     margin-bottom: 0px;
     margin-right: 0px;
+
     
   }
 
@@ -155,35 +159,8 @@ h2 {
   }
  
   .about__download {
-    display: grid;
-    width: 100%;
+    display: inline-flex;
     justify-items: center;
   }
 }
 
-
-
-/* Large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .about {
-    padding: 60px 65px 65px 65px;
-  }
-  
-  .about__education {
-    padding-left: 200px;
-  }
-
-  .about__summary {
-    
-    margin-bottom: 100px;
-    margin-right: 100px;
-    
-  }
-
-  .mobile--hidden {
-    display: block;
-  }
-
-
- 
-}

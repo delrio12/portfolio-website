@@ -5,7 +5,7 @@ import GetAppIcon from '@material-ui/icons/GetApp'
 class About extends React.Component {
 
     downloadData = () => {
-		fetch('http://localhost:3000/download/')
+		fetch('http://localhost:3000/')
 			.then(response => {
 				response.blob().then(blob => {
 					let url = window.URL.createObjectURL(blob);
@@ -20,8 +20,8 @@ class About extends React.Component {
     
     render() {
         return (
-            <div className="about">
-                <div className="about__summary">
+            <div className="about animate__animated animate__fadeInUp">
+                <div className="about__summary ">
                     <h1>About Me</h1>
                     <div className="long-line"></div>
                     
@@ -31,15 +31,17 @@ class About extends React.Component {
                 <div className="about__picture">
                     <img  className="image" src="https://media-exp1.licdn.com/dms/image/C5603AQGFTdhG_IAb8Q/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=VyVOdBS-afK6sFO9C5vHvQi1njYlgMMKWfXhy6WXRSs" alt="Andres" />     
                     
-                </div>  
-                <div className="about__education "> 
-                    <div className= "mobile--hidden"> <h1>Education</h1> </div>
+                </div>   
+                <div className="about__summary "> 
+                <div className="mobile--hidden"><h1>Education</h1> </div>
                     <div className="long-line mobile--hidden"></div>
+
                     <div className="about__download">
-                        <a href="./download/" download="AndresDelRio.docx" className="button__primary">
+                        <a href="./AndresDelRio.docx" download="AndresDelrio_resume.doc" className="button__primary">
                                <GetAppIcon fontSize="larger" /> Resume 
                         </a>
                     </div>
+                    
                     <div className="about__education__element mobile--hidden">
                         <h2> DCS / DEC in Computer Programming </h2>
                         <p> Seneca College, Canada. </p>
@@ -53,6 +55,8 @@ class About extends React.Component {
                         <p> January 2012 – December 2017 </p>
                         <p> Member of Corporate Finance Research Group.</p>
                     </div>
+
+                    
                 </div>
                 
             </div>

@@ -17,14 +17,14 @@ body {
 
   --color-borders:	#1cd3bd;
 
-  
+  margin: 0;
   
 }
 
 .app {
 
   display: block;
-  
+
 }
 
 /* Small and Medium devices (phones, 960px and down) */

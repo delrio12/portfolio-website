@@ -6,7 +6,7 @@ import ContactForm from './ContactForm';
 function Contact() {
     return (
         
-        <div className="contact">
+        <div className="contact animate__animated animate__fadeInUp">
         
                 <div className="contact__title">
                     <h1>Get In Touch</h1>

@@ -1,12 +1,15 @@
+/********************************************************/
+/******* Large devices (Laptops, PCs 960x and up) *******/
+/********************************************************/
+
 .portfolio {
     background-color: var(--color-background);
     display: block;
     color: var(--color-title);
     height: 100%;
-    width: 100%;
-    padding: 60px 0px;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    margin: 6rem 8rem 6rem;
   }
 
 .portfolio__description {
@@ -42,12 +45,20 @@
 
 
   .portfolio__project__description  {
-    text-align: justify;
+    text-align: center;
     line-height: 150%;
+    background: #0B2545;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
   }
+
+  
   .portfolio__project__description {
     font-weight: 300;
-    color: var(--color-background);
+    color: white;
   }
 
 
@@ -80,28 +91,21 @@
 }
 
 .portfolio__project:hover .portfolio__project__image__overlay {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
-/* Small devices (phones, 768px and down) */
-@media only screen and (max-width: 768px) {
-  .portfolio__description p {
-    padding: 10px 0 50px 0px;
+/*************************************************************/
+/* Small and medium devices (phones, tablets, 960x and down) */
+/*************************************************************/
+
+@media only screen and (max-width: 960px) {
+  
+
+    .portfolio {
+      margin: 3rem 1rem 4rem;
     }
 
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .portfolio__description p {
-    padding: 30px 0 80px 160px;
-    }
- 
-}
-
-/* Large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .portfolio__description p {
-    padding: 30px 0 80px 190px;
+    .portfolio__project__description {
+      display: none;
     }
 }
