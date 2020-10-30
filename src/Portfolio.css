@@ -64,7 +64,7 @@
 
 .portfolio__project {
   position: relative;
-  width: 50%;
+  width: 60%;
   margin-bottom: 60px;
 }
 
@@ -101,8 +101,14 @@
 @media only screen and (max-width: 960px) {
   
 
+    .portfolio__project {
+      position: relative;
+      width: 90%;
+      margin-bottom: 60px;
+  }
+
     .portfolio {
-      margin: 3rem 1rem 4rem;
+      margin: 0rem 1rem 4rem;
     }
 
     .portfolio__project__description {

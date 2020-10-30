@@ -43,7 +43,7 @@
 @media only screen and (max-width: 960px) {
 
   .contact {
-    margin: 3rem 0rem 4rem;
+    margin: 0rem 2rem 4rem 2rem;
   }
   
   .contact__description {
@@ -57,7 +57,7 @@
   }
   
   .contact__description {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 10px;
 
   }
