@@ -21,6 +21,10 @@
   font-weight: 300;
   line-height: 160%;
 }
+.about__description {
+  
+  margin-right: 8rem;
+}
 
 .about__summary h1, .about__education h1 {
   letter-spacing: 1px;
@@ -58,6 +62,8 @@ h2 {
   display: inline-flex;
   justify-content: right;
   margin-left: 20px;
+  justify-content: center;
+  
 }
 .about__education {
     width: 100%;
@@ -85,7 +91,7 @@ h2 {
   padding: 20px 20px 20px 20px;
   margin: 40px 40px 10px 0px ;
   background-color: var(--color-background2);
-  
+  justify-content: center;
   border-radius: 20px;
 }
 

@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   color: var(--color-title);
-  margin: 6rem 8rem 6rem;
+  margin: 6rem 8rem 12rem;
   text-align: left;
 }
 
@@ -45,6 +45,17 @@
   .home {
     padding: 0px ;
     margin: 3rem 2rem 4rem;
+  }
+}
+
+/*************************************************************/
+/* Large devices (1200x and up) */
+/*************************************************************/
+
+@media only screen and (min-width: 1000px) {
+  .home {
+    padding: 0px ;
+    margin: 6rem 8rem 14rem 10rem;
   }
 }
 

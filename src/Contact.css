@@ -23,11 +23,12 @@
   .contact__description {
     font-size: 22px;
     text-align: left;
-    margin-bottom: 20px;
+    
     display: inline-block;
     font-weight: 300;
     color: var(--color-subtitle);
-    margin-left: 40px;
+    
+    margin: 0rem 6rem 1rem 8rem;
 
   }
 
