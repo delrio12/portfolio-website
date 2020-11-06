@@ -56,6 +56,9 @@ h2 {
     border-radius: 50%;
     width: 250px;
     display: inline-block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 
 .about__download {
@@ -132,7 +135,6 @@ h2 {
 /* Small and medium devices (phones, tablets, 960x and down) */
 /*************************************************************/
 
-/* Small devices (phones, 768px and down) */
 @media only screen and (max-width: 960px) {
   .about {
     margin: 0rem 1rem 4rem;
@@ -158,8 +160,13 @@ h2 {
     
     margin-bottom: 0px;
     margin-right: 0px;
+        
+  }
 
-    
+  .image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
   }
 
   .mobile--hidden {
@@ -168,12 +175,15 @@ h2 {
 
   .about__picture {
     padding-top: 0px;
+    
   }
  
-  .about__download {
-    display: inline-flex;
-    justify-items: center;
-  }
+ .about__summary.education {
+    display: flex;
+    justify-content: center;
+    margin-left: 2.5rem;
+   
+ }
 
  
 }

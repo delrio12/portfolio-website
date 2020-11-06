@@ -31,15 +31,15 @@ class About extends React.Component {
 
                 </div>
                 <div className="about__picture">
-                    <img  className="image" src="https://firebasestorage.googleapis.com/v0/b/portfolio-website-582f4.appspot.com/o/images%2Flinkedin2.jpg?alt=media&token=da0a4a03-f402-435c-bbea-86de68678ae4" alt="Andres" />     
+                    <img  className="image" src="https://firebasestorage.googleapis.com/v0/b/portfolio-website-582f4.appspot.com/o/images%2Flinkedin.jpg?alt=media&token=94ca7bfb-27ea-43b5-b5a0-e76011f7fb0a" alt="Andres" />     
                     
                 </div>   
-                <div className="about__summary "> 
+                <div className="about__summary education"> 
                 <div className="mobile--hidden"><h1>Education</h1> </div>
                     <div className="long-line mobile--hidden"></div>
                     
                         <div className="about__download">
-                            <a href="./AndresDelRio.docx" download="AndresDelrio_resume.doc" className="button__primary">
+                            <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-website-582f4.appspot.com/o/documents%2FAndresDelRio.docx?alt=media&token=48131a20-cc63-43d9-b5cf-41123a94fec4" download className="button__primary">
                                 <GetAppIcon fontSize="larger" /> Resume 
                             </a>
                         </div>
