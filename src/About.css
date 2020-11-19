@@ -112,6 +112,7 @@ h2 {
   background-color: var(--color-background) !important;
   border: solid var(--color-borders) 2px;
   text-decoration: none;
+  outline: none;
   
   
   
