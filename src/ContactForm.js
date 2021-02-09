@@ -17,7 +17,7 @@ class ContactForm extends React.Component {
     e.preventDefault();
     axios({
       method: "POST", 
-      url:"http://localhost:3002/send", 
+      url:"https://us-central1-portfolio-website-582f4.cloudfunctions.net/submit", 
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success') {
