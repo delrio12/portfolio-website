@@ -1,4 +1,5 @@
 import React from 'react';
+
 import axios from 'axios';
 import './ContactForm.css'
 
@@ -17,7 +18,7 @@ class ContactForm extends React.Component {
     e.preventDefault();
     axios({
       method: "POST", 
-      url:"http://localhost:3002/send", 
+      url:"http://localhost:3000", 
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success') {
