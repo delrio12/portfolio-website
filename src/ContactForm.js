@@ -14,21 +14,25 @@ class ContactForm extends React.Component {
     }
   }
 
-  handleSubmit(e){
-    e.preventDefault();
+  handleSubmit(event){
+    event.preventDefault();
+
+
     axios({
       method: "POST", 
-      url:"http://localhost:3002", 
+      url:"http://localhost:3002/send", 
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success') {
-        document.getElementById("Sent").classList.add('unhidden');
-        document.getElementById("Sent").classList.remove('hidden');
+        alert("Message Sent."); 
+        // document.getElementById("Sent").classList.add('unhidden');
+        // document.getElementById("Sent").classList.remove('hidden');
         
         this.resetForm()
       } else if (response.data.status === 'fail') {
-        document.getElementById("NotSent").classList.add('unhidden');
-        document.getElementById("NotSent").classList.remove('hidden');
+        alert("Message failed to Send."); 
+        // document.getElementById("NotSent").classList.add('unhidden');
+        // document.getElementById("NotSent").classList.remove('hidden');
       }
     })
   }
@@ -36,8 +40,7 @@ class ContactForm extends React.Component {
   resetForm(){
     this.setState({name: '', email: '', message: ''})
   }
-  
-  
+
   render() {
    return(
      <div className="contactForm">
@@ -83,6 +86,7 @@ class ContactForm extends React.Component {
     onMessageChange(event) {
       this.setState({message: event.target.value})
     }
+
   }
   
   export default ContactForm;
