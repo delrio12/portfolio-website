@@ -2,7 +2,6 @@ import React from 'react';
 
 import axios from 'axios';
 import './ContactForm.css'
-
 class ContactForm extends React.Component {
   
   constructor(props) {
@@ -20,7 +19,7 @@ class ContactForm extends React.Component {
 
     axios({
       method: "POST", 
-      url:"http://localhost:3002/send", 
+      url:"https://andresdelrio-dev-server.herokuapp.com/send", 
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success') {
