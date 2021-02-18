@@ -18,7 +18,7 @@ class ContactForm extends React.Component {
     e.preventDefault();
     axios({
       method: "POST", 
-      url:"http://localhost:3000", 
+      url:"http://localhost:3002", 
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success') {
