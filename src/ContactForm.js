@@ -24,15 +24,15 @@ class ContactForm extends React.Component {
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success') {
-        alert("Message Sent."); 
-        // document.getElementById("Sent").classList.add('unhidden');
-        // document.getElementById("Sent").classList.remove('hidden');
+        
+        document.getElementById("Sent").classList.add('unhidden');
+        document.getElementById("Sent").classList.remove('hidden');
         
         this.resetForm()
       } else if (response.data.status === 'fail') {
-        alert("Message failed to Send."); 
-        // document.getElementById("NotSent").classList.add('unhidden');
-        // document.getElementById("NotSent").classList.remove('hidden');
+        
+        document.getElementById("NotSent").classList.add('unhidden');
+        document.getElementById("NotSent").classList.remove('hidden');
       }
     })
   }
