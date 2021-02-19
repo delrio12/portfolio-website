@@ -1,12 +1,13 @@
 import React from 'react';
 import './Contact.css';
 import ContactForm from './ContactForm';
+import ContactTemp from './ContactTemp';
 
 
 function Contact() {
     return (
         
-        <div className="contact animate__animated animate__fadeInUp">
+        <div className="contact animate__animated animate__fadeIn">
         
                 <div className="contact__title">
                     <h1>Get In Touch</h1>
@@ -18,7 +19,8 @@ function Contact() {
                 </div>
         
                 <div className="contact__form">
-                <ContactForm /> 
+                {/* <ContactForm />  */}
+                <ContactTemp />
                 </div>
                    
         </div>

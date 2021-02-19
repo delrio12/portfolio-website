@@ -20,7 +20,7 @@ class About extends React.Component {
     
     render() {
         return (
-            <div className="about animate__animated animate__fadeInUp">
+            <div className="about animate__animated animate__fadeIn">
                 <div className="about__summary ">
                     <h1>About Me</h1>
                     <div className="long-line"></div>
