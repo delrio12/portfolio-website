@@ -2,8 +2,8 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-  margin: 20px;
-  background-color: var(--color-background);
+  
+  background-color: var(--color-background) !important;
   
   --color-background: #040c0f;
   --color-background2:#16202a;
@@ -17,7 +17,7 @@ body {
 
   --color-borders:	#1cd3bd;
 
-  margin: 0;
+  margin: 0 auto;
   
 }
 
@@ -33,10 +33,12 @@ body {
   {
     width: 100%;
     display: none;
+    margin: 0 auto;
   }
 
   body {
     font-family: 'Rubik', sans-serif;
     background-color: var(--color-background);
+    
   }
 }

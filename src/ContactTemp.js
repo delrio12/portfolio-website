@@ -4,11 +4,12 @@ import './ContactTemp.css';
 
 function ContactTemp() {
     return (
-    <li className="socialbar__list__item">
+        
+    <li className="contactTemp__Icon">
                     <a className="hvr-grow" href="mailto:addelrio11@gmail.com" target="_blank">
                         <EmailIcon fontSize="large" />
                     </a>
     </li>
     )
 }
-export default ContactTemp
+export default ContactTemp;

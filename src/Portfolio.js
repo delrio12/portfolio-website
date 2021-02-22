@@ -1,8 +1,7 @@
 import React from 'react'
 import './Portfolio.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
+
 function Portfolio() {
     return (
         <div className="portfolio animate__animated animate__fadeIn">
@@ -20,24 +19,24 @@ function Portfolio() {
                             <h2>andresdelrio.dev</h2>
                             <p>Built my personal portfolio website.</p>
                             <ul>
-                                <il className="portfolio__button">
-                                    <a  href="#" target="_blank" href="https://andresdelrio.dev">
+                                <li className="portfolio__button">
+                                    <a  href="#" target="_blank" href="https://www.andresdelrio.dev">
                                         <button type="button" className="btn btn-light">Go to Website</button>
                                     </a>
-                                </il>
-                                <il className="portfolio__button">
+                                </li>
+                                <li className="portfolio__button">
                                     <a  href="#" target="_blank" href="https://github.com/delrio12/portfolio-websiteV0">
                                         <button type="button" className="btn btn-warning">Go to Github Rep</button>
                                     </a>
-                                </il>  
+                                </li>  
                             </ul>
                             <p>Technologies I used for this project:</p>
                             <ul>
-                                <il>
+                                <li>
                                     <button>
 
                                     </button>
-                                </il>
+                                </li>
                             </ul>
                             
                         </div>
