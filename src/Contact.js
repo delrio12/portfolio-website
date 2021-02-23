@@ -19,6 +19,9 @@ function Contact() {
                 </div>
         
                 <div className="contact__form">
+                    <br/>
+                    <br/>
+                    <br/>
                 {/* <ContactForm />  */}
                 <ContactTemp />
                 </div>
