@@ -15,7 +15,8 @@ function Contact() {
                 </div>
 
                 <div className="contact__description">
-                    <p> I'm currently looking for new opportunities! If you want to get in touch or just want to say hi, send me a message and I'll try my best to get back to you as soon as possible.</p>
+                    <p> I'm currently looking for new opportunities! If you want to get in touch or just want to say hi, </p>
+                    <p> send me a message and I'll get back to you as soon as possible.</p>
                 </div>
         
                 <div className="contact__form">

@@ -7,11 +7,11 @@
   background-color: var(--color-background);
   font-family: 'Rubik', sans-serif;
   height: 100%;
+  min-height: 100vh;
   text-align: center;
   margin: 6rem 8rem 6rem;
-  
+  position: relative;
 }
-
 
 .about__summary {
   width: 90%;
@@ -21,6 +21,7 @@
   font-weight: 300;
   line-height: 160%;
 }
+
 .about__description {
   
   margin-right: 8rem;
@@ -45,10 +46,11 @@ h2 {
   display: inline-block;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.37);
 }
+
 .about__picture {
     width: 100%;
-    position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 .image {
@@ -62,20 +64,22 @@ h2 {
 }
 
 .about__download {
-  display: inline-flex;
+  display: flex;
   justify-content: right;
   margin-left: 20px;
   justify-content: center;
+
   
 }
+
 .about__education {
-    width: 100%;
-    font-size: 22px;
-    text-align: left;
-    margin-bottom: 40px;
-    display: inline-block;
-    font-weight: 300;
-    line-height: 160%;
+  width: 90%;
+  font-size: 22px;
+  text-align: left;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 160%;
+    
 }
 
 .about__education p {
@@ -129,8 +133,6 @@ h2 {
   
   }
 
-
-
 /*************************************************************/
 /* Small and medium devices (phones, tablets, 960x and down) */
 /*************************************************************/
@@ -148,6 +150,8 @@ h2 {
 
   .about__education {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .about__education__element {
@@ -177,14 +181,6 @@ h2 {
     padding-top: 0px;
     
   }
- 
- .about__summary.education {
-    display: flex;
-    justify-content: center;
-    margin-left: 2.5rem;
-   
- }
-
  
 }
 

@@ -7,6 +7,7 @@
     display: block;
     color: var(--color-title);
     height: 100%;
+    min-height: 100vh;
     text-align: center;
     font-family: 'Rubik', sans-serif;
     margin: 6rem 8rem 6rem;
@@ -23,7 +24,6 @@
     letter-spacing: 1px;
     display: inline-block;
     padding-right: 20px;
-    
     font-size: 30px;
     color: var(--color-borders);
 
@@ -90,13 +90,18 @@
 }
 
 .portfolio__project:hover .portfolio__project__image__overlay {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .portfolio__button {
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
+.three-col {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+}
 
 
 
@@ -110,14 +115,31 @@
     .portfolio__project {
       position: relative;
       width: 90%;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
+      background-color: var(--color-background2);
   }
 
     .portfolio {
       margin: 0rem 1rem 4rem;
     }
 
-    .portfolio__project__description {
-      display: none;
+    .portfolio__project__image__overlay {
+     
+      
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      background-color: var(--color-borders);
+      border-radius: 10px;
+    }
+
+    .portfolio__project:active .portfolio__project__image__overlay {
+      opacity: 1;
+    }
+
+    .three-col {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
     }
 }

@@ -10,6 +10,8 @@
   color: var(--color-title);
   margin: 6rem 8rem 12rem;
   text-align: left;
+  min-height: 50vh;
+  height: 100%;
 }
 
 /* .home--right {
