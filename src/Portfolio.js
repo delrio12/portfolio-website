@@ -141,6 +141,48 @@ function Portfolio() {
                         </div>
                     </div>    
                 </div>
+
+
+                <div className="portfolio__project">
+                    <iframe className="portfolio__project__image" src="https://giphy.com/embed/RwJcGlIksyuedXPQhf" width="800" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/RwJcGlIksyuedXPQhf"></a></p>
+                    <div className="portfolio__project__image__overlay">
+                        <div className="portfolio__project__description">
+                            <h3>Flappy Bird Game</h3>
+                            <p>Built a flappy bird game using HTML and Javascript.</p>
+                            <ul>
+                                <li className="portfolio__button">
+                                <a href="https://flappy-bird11.herokuapp.com/" target="_blank" >
+                                    <button type="button" className="btn btn-light btn-sm">Go to Website</button>
+                                </a>
+                                </li>
+                                <li className="portfolio__button">
+                                    <a  href="#" target="_blank" href="https://github.com/delrio12/flappy-bird11">
+                                        <button type="button" className="btn btn-warning btn-sm">Go to Github Rep</button>
+                                    </a>
+                                </li>  
+                            </ul>
+                            <p>Technologies I used for this project:</p>
+                            <ul className="three-col">
+                                <li className="portfolio__button">
+                                    <button className="btn btn-secondary btn-sm" disabled>
+                                        HTML5
+                                    </button>
+                                </li>
+                                <li className="portfolio__button">
+                                    <button className="btn btn-secondary btn-sm"  disabled>
+                                        CSS
+                                    </button>
+                                </li>
+                                <li className="portfolio__button">
+                                    <button className="btn btn-secondary btn-sm"  disabled>
+                                        JAVASCRIPT
+                                    </button>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>    
+                </div>
                 {/* <div className="portfolio__project">
                     <img className="portfolio__project__image" src="https://digitalsynopsis.com/wp-content/uploads/2017/09/free-stock-images-photos-websites-pexels.jpg" alt="Forest" />
                     <div className="portfolio__project__image__overlay">
@@ -167,7 +209,15 @@ function Portfolio() {
             
 
         </div>
-    )
+
+    
+    );
+    
 }
+
+var myWindow;
+function openWin() {
+    myWindow = window.open("", "", "width=100, height=100");
+  }
 
 export default Portfolio
