@@ -75,6 +75,8 @@
 
 }
 
+
+
 .portfolio__project__image__overlay {
   position: absolute;
   top: 0;
@@ -116,22 +118,35 @@
       position: relative;
       width: 90%;
       margin-bottom: 50px;
-      background-color: var(--color-background2);
   }
 
     .portfolio {
       margin: 0rem 1rem 4rem;
     }
 
+    
     .portfolio__project__image__overlay {
-     
-      
+      font-size: 12px;
       height: 100%;
       width: 100%;
-      opacity: 0;
+      opacity: 1;
       background-color: var(--color-borders);
       border-radius: 10px;
+      position: relative;
+      margin-top: 20px;
+      
     }
+
+    .portfolio__project__image__overlay h3 {
+      font-size: 14px;
+    }
+
+    .portfolio__project__image__overlay button {
+      display: flex;
+      align-content: space-between;
+      font-size: 10px;
+    }
+
 
     .portfolio__project:active .portfolio__project__image__overlay {
       opacity: 1;
@@ -142,4 +157,10 @@
       -moz-column-count: 2;
       column-count: 2;
     }
+
+    .giphy-embed {
+      width: 250px;
+      height: 150px;
+    }
+  
 }

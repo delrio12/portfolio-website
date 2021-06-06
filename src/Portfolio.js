@@ -21,7 +21,7 @@ function Portfolio() {
                             <ul>
                                 <li className="portfolio__button">
                                     <a  href="#" target="_blank" href="https://www.andresdelrio.dev">
-                                        <button type="button" className="btn btn-light btn-sm">Go to Website</button>
+                                        <button atype="button" className="btn btn-light btn-sm">Go to Website</button>
                                     </a>
                                 </li>
                                 <li className="portfolio__button">
