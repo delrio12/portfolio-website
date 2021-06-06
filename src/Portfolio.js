@@ -16,7 +16,7 @@ function Portfolio() {
                     <img className="portfolio__project__image" src="https://firebasestorage.googleapis.com/v0/b/portfolio-website-582f4.appspot.com/o/images%2Fwebsite.PNG?alt=media&token=e032015d-6459-4a4d-9c81-6d0fafdc27fa" alt="andresdelrio.dev" />
                     <div className="portfolio__project__image__overlay">
                         <div className="portfolio__project__description">
-                            <h3>www.andresdelrio.dev</h3>
+                            <h3>Portfolio Website</h3>
                             <p>Built my personal portfolio website.</p>
                             <ul>
                                 <li className="portfolio__button">
