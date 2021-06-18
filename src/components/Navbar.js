@@ -4,6 +4,15 @@ import './Navbar.css'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import Home from './Home';
+import About from './About';
+import Portfolio from './Portfolio';
+
+import Footer from './Footer';
+import SocialBar from './SocialBar';
+import Contact from './Contact';
 
 function Navbar() { 
   
@@ -13,6 +22,10 @@ function Navbar() {
 
   return (
     <>
+        {/* <Route exact path='/' component={Home}/> 
+        <Route path='/About' component={About} /> 
+        <Route path='/Portfolio' component={Portfolio} />  
+        <Route path='/Contact' component={Contact} />  */}
       <nav className='header'>
         <Link to='/' className='header__logo hvr-grow' onClick={closeMobileMenu}>
           DEL <br/>
@@ -48,7 +61,6 @@ function Navbar() {
                 Contact 
               </Link>
             </li>
-
         </ul>
       </nav>
     </>
