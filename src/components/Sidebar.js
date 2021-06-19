@@ -11,16 +11,16 @@ function Sidebar({ isOpen, toggle }) {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="/">
+                    <SidebarLink to="/" isOpen={ isOpen } onClick={ toggle }>
                         Home
                     </SidebarLink>
-                    <SidebarLink to="about">
+                    <SidebarLink to="about" isOpen={ isOpen } onClick={ toggle }>
                         About
                     </SidebarLink>
-                    <SidebarLink to="projects">
+                    <SidebarLink to="projects" isOpen={ isOpen } onClick={ toggle }>
                         Projects
                     </SidebarLink>
-                    <SidebarLink to="contact">
+                    <SidebarLink to="contact" isOpen={ isOpen } onClick={ toggle }>
                         Contact Me
                     </SidebarLink>
                 </SidebarMenu>

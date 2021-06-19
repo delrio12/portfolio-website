@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Home.css';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
+import Welcome from './Welcome';
 
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
+            <Welcome />
         </>
     );
     
