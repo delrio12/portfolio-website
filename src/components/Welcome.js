@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Video from '../img/Video.mp4'
 
-
 const Welcome = () => {
     return (
         <WelcomeContainer>
@@ -60,11 +59,7 @@ const WelcomeContent = styled.div `
     flex-direction: column;
     align-items: center; 
     text-align: center;
-
-
     color: var(--color-title);
-    margin: 6rem 8rem 12rem;
-    
 `
 
 const WelcomeH1 = styled.h1 `
