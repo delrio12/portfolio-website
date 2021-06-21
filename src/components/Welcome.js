@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Video from '../img/Video.mp4'
+import Video from '../img/video.mp4'
 
 const Welcome = () => {
     return (
