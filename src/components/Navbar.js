@@ -33,7 +33,7 @@ function Navbar({ toggle }) {
 export default Navbar
 
 const Nav = styled.nav`
-  background-color: var(--color-background);
+  background-color: #000;
   height: 90px;
   // margin-top: -90px;
   display: flex;

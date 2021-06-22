@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Video from '../img/video.mp4'
 
 const Welcome = () => {
+    
     return (
         <WelcomeContainer>
             <WelcomeBg>
@@ -52,7 +53,7 @@ const VideoBg =  styled.video `
 
 const WelcomeContent = styled.div `
     z-index: 3;
-    max-width: 1200px;
+    max-width: 1400px;
     position: absolute;
     padding: 8px 24px;
     display: flex;
@@ -85,7 +86,6 @@ const WelcomeP = styled.p `
     font-size: 2rem;
     font-weight: 300;
     max-width: 600px;
-    margin-bottom: 40px;
 
     @media screen and (max-width: 760px) {
         font-size: 1.6rem;
