@@ -14,17 +14,17 @@ function Footer() {
             
         // </footer>
         <>
-        <Footer>
+        {/* <Footer>
             <FooterWrap>
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <
+                            
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
             </FooterWrap>
-        </Footer>
+        </Footer> */}
         </>
         
     )

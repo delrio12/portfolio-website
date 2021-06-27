@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 // import './About.css'
 // import GetAppIcon from '@material-ui/icons/GetApp'
-import { Button } from 'react-scroll';
+import { Button } from './Button'
+// import { homeObjOne } from '../components/Data'
 // class About extends React.Component {
 
 //     downloadData = () => {
@@ -64,25 +65,33 @@ import { Button } from 'react-scroll';
 
 // import React from 'react'
 
-const About = () => {
+const About = (lightBg, id, imgStart, topLine, lightText, headline, darkText, buttonLabel, description, img, alt, primary, dark, dark2 ) => {
     return (
         <>
-        <InfoContainer>
+        <InfoContainer lightBg={lightBg} id={id} >
             <InfoWrapper>
-                <InfoRow>
+                <InfoRow imgStart={imgStart}>
                     <Column1>
                         <TextWrapper>
-                            <TopLine>Top line</TopLine>
-                            <Heading>Heading</Heading>
-                            <Subtitle>Subtitle</Subtitle>
+                            <TopLine>{topLine}</TopLine>
+                            <Heading lightText={lightText}> {headline}</Heading>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to='home'> Button </Button>
+                                <Button to='home'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-90}
+                                primary={primary ? 1 : 0}
+                                dark={dark ? 1 : 0}
+                                dark2={dark2 ? 1 : 0}>{buttonLabel} </Button>
                             </BtnWrap>
                         </TextWrapper>
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                        <Img />
+                        <Img src={img} alt={alt}/>
                         </ImgWrap>
                     </Column2>
                 </InfoRow>
@@ -108,7 +117,7 @@ const InfoWrapper = styled.div `
     z-index: 1;
     height: 860px;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
