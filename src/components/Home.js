@@ -3,7 +3,7 @@ import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import Welcome from './Welcome';
 import About from './About';
-import { homeObjOne } from '../components/Data';
+import { homeObjOne, homeObjTwo, homeObjThree } from './Data';
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +16,9 @@ function Home() {
             <Navbar toggle={toggle} />
             <Welcome />
             <About {...homeObjOne}/>
+            <About {...homeObjTwo}/>
+            <About {...homeObjThree}/>
+
         </>
     );
 };
