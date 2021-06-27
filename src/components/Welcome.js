@@ -26,9 +26,10 @@ const WelcomeContainer = styled.div `
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 960px;
     position: relative;
     z-index: 1;
+
 `
 
 const WelcomeBg = styled.div `
@@ -46,14 +47,14 @@ const WelcomeBg = styled.div `
 const VideoBg =  styled.video `
     width: 100%;
     height: 100%;
-    --o-object-fit: cover;
+    -o-object-fit: cover;
     object-fit: cover;
     background: var(--color-background);
 `
 
 const WelcomeContent = styled.div `
     z-index: 3;
-    max-width: 1400px;
+    max-width: 1500px;
     position: absolute;
     padding: 8px 24px;
     display: flex;

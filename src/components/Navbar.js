@@ -1,13 +1,27 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 import MenuIcon from '@material-ui/icons/Menu'
 
+
 function Navbar({ toggle }) { 
+  const [ scrollNav, setScrollNav] = useState(false)
+
+  const changeNav = () => {
+    if(window.scrollY >= 90) {
+      setScrollNav(true)
+    } else {
+      setScrollNav(false)
+    }
+  }
+
+  useEffect (() => {
+     window.addEventListener('scroll', changeNav)
+  }, [])
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/"> DEL <br /> RIO </NavLogo>
           <MobileIcon onClick={toggle}>
@@ -33,9 +47,9 @@ function Navbar({ toggle }) {
 export default Navbar
 
 const Nav = styled.nav`
-  background-color: #000;
+  background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
   height: 90px;
-  // margin-top: -90px;
+  margin-top: -90px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +121,7 @@ const NavMenu = styled.ul `
 `
 
 const NavItem = styled.li `
-  height: 80px;
+  height: 90px;
 `
 
 const NavLinks = styled(LinkScroll) `
