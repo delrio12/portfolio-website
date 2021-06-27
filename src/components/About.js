@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import './About.css'
-import GetAppIcon from '@material-ui/icons/GetApp'
-import
+// import './About.css'
+// import GetAppIcon from '@material-ui/icons/GetApp'
+import { Button } from 'react-scroll';
 // class About extends React.Component {
 
 //     downloadData = () => {
@@ -67,16 +67,24 @@ import
 const About = () => {
     return (
         <>
-        <InfoContainer id={id}>
+        <InfoContainer>
             <InfoWrapper>
                 <InfoRow>
                     <Column1>
                         <TextWrapper>
-                            <TopLine></TopLine>
-                            <Heading></Heading>
-                            <Subtitle></Subtitle>
+                            <TopLine>Top line</TopLine>
+                            <Heading>Heading</Heading>
+                            <Subtitle>Subtitle</Subtitle>
+                            <BtnWrap>
+                                <Button to='home'> Button </Button>
+                            </BtnWrap>
                         </TextWrapper>
                     </Column1>
+                    <Column2>
+                        <ImgWrap>
+                        <Img />
+                        </ImgWrap>
+                    </Column2>
                 </InfoRow>
             </InfoWrapper>
         </InfoContainer>
@@ -144,5 +152,39 @@ const TopLine = styled.p `
 `
 
 const Heading = styled.h1 `
+
+margin-bottom: 24px;
+font-size: 48px;
+line-height: 1.1;
+font-weight: 600;
+color: ${({ lightText }) => (lightText ? 'var(--color-borders)' : 'white')}
+
+@media screen and (max-width: 400px) {
+    font-size: 32px;
+}
+
+`
+
+const Subtitle = styled.p `
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    color: {({ darText }) => (darkText ? '#010606' : '#fff')};
+`
+const BtnWrap = styled.div `
+    display: flex;
+    justify-content: flex-start;
+`
+
+const ImgWrap = styled.div `
+    max-width: 555px;
+    height: 100%;
+`
+
+const Img = styled.img `
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding-right: 0;
 
 `
