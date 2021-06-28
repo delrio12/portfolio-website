@@ -1,13 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
-
-
-
 
 function Footer() {
     return (
@@ -17,16 +13,16 @@ function Footer() {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialIcons>
-                            <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
+                            <SocialIconLink href="https://www.linkedin.com/in/andresdelrio11/" target="_blank" aria-label="LinkedIn">
                             <LinkedInIcon/>
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="Github">
+                            <SocialIconLink href="https://github.com/delrio12" target="_blank" aria-label="Github">
                             <GitHubIcon/>
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+                            <SocialIconLink href="https://twitter.com/DevRio11" target="_blank" aria-label="Twitter">
                             <TwitterIcon/>
                             </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                            <SocialIconLink href="https://www.instagram.com/andresdelrio11/" target="_blank" aria-label="Instagram">
                             <InstagramIcon/>
                             </SocialIconLink>
                         </SocialIcons>
@@ -38,18 +34,18 @@ function Footer() {
             </FooterWrap>
         </FooterContainer>
         </>
-        
     )
 }
 
 export default Footer
 
+// ********* STYLED COMPONENTS ************
 const FooterContainer = styled.footer `
-    background-color: #101522;
+    background-color: #000;
 `
 
 const FooterWrap = styled.div `
-    padding: 0 24px;
+    padding: 6px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,12 +65,13 @@ const SocialMediaWrap = styled.div `
     justify-content: space-between;
     align-items: center;
     max-width: 1400px;
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
 `
 
 const WebsiteRights = styled.small `
-    color: #fff;
+    color: var(--color-subtitle);
     margin: 16px 0;
+    font-weight: 300;
 `
 
 const SocialIcons = styled.div `
@@ -82,10 +79,18 @@ const SocialIcons = styled.div `
     justify-content: space-between;
     align-items: center;
     max-width: 800px;
+    
 `
 
 const SocialIconLink = styled.a `
-    color: #fff;
+    color: var(--color-subtitle);
     font-size: 24px;
     margin: 0 16px;
+    transition-duration: 0.2s;
+    transition-property: transform;  
+    
+    &:hover {
+      transform: scale(1.1);
+      color: #fff;
+    }
 `

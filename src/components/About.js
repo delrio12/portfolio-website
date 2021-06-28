@@ -171,7 +171,6 @@ color: ${({ lightText }) => (lightText ? "white" : "black")};
 @media screen and (max-width: 400px) {
     font-size: 32px;
 }
-
 `
 
 const Subtitle = styled.p `
@@ -195,5 +194,4 @@ const Img = styled.img `
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
-
 `
