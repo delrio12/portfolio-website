@@ -3,6 +3,7 @@ import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import Welcome from './Welcome';
 import About from './About';
+import Footer from './Footer'
 import { homeObjOne, homeObjTwo, homeObjThree } from './Data';
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
             <About {...homeObjOne}/>
             <About {...homeObjTwo}/>
             <About {...homeObjThree}/>
+            <Footer/>
 
         </>
     );
