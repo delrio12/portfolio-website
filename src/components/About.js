@@ -65,7 +65,7 @@ import { Button } from './Button'
 
 // import React from 'react'
 
-const About = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, buttonLabel, description, img, alt, primary, dark, dark2 }) => {
+const About = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, buttonLabel1, buttonLabel2, description, img, alt, primary, dark, dark2 }) => {
     return (
         <>
         <InfoContainer lightBg={lightBg} id={id} >
@@ -85,8 +85,18 @@ const About = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, b
                                 offset={-90}
                                 primary={primary ? 1 : 0}
                                 dark={dark ? 1 : 0}
-                                dark2={dark2 ? 1 : 0}>{buttonLabel} </Button>
+                                dark2={dark2 ? 1 : 0}>{buttonLabel1} </Button>
+                                <Button to='home'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-90}
+                                primary={primary ? 1 : 0}
+                                dark={dark ? 1 : 0}
+                                dark2={dark2 ? 1 : 0}>{buttonLabel2} </Button>
                             </BtnWrap>
+                            
                         </TextWrapper>
                     </Column1>
                     <Column2>
@@ -104,8 +114,7 @@ const About = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, b
 export default About
 
 const InfoContainer = styled.div`
-    color: #fff;
-    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+    background: ${({lightBg}) => (lightBg ? '#B7CDDB' : '#010606')};
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -151,7 +160,7 @@ const TextWrapper = styled.div `
 `
 
 const TopLine = styled.p `
-    color: #01bf71;
+    color: var(--color-borders);
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -178,7 +187,7 @@ const Subtitle = styled.p `
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({ darkText }) => (darkText ? '#010606' : "#fff")};
+    color: ${({ darkText }) => (darkText ? 'var(--color-background)' : "var(--color-subtitle)")};
 `
 const BtnWrap = styled.div `
     display: flex;
