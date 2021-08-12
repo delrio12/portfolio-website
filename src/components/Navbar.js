@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 import MenuIcon from '@material-ui/icons/Menu'
-
+import { animateScroll as scroll } from 'react-scroll';
 
 function Navbar({ toggle }) { 
   const [ scrollNav, setScrollNav] = useState(false)
@@ -19,23 +19,27 @@ function Navbar({ toggle }) {
   useEffect (() => {
      window.addEventListener('scroll', changeNav)
   }, [])
+
+  const toggleHome = () => {
+    scroll.scrollToTop()
+  }
   return (
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/"> DEL <br /> RIO </NavLogo>
+          <NavLogo to="/" onClick={toggleHome}> DEL <br /> RIO </NavLogo>
           <MobileIcon onClick={toggle}>
             <MenuIcon fontSize="large" />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to='about' smooth={true} duration={500} spy={true} exact='true' offset={-90}>About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="projects">Projects</NavLinks>
+              <NavLinks to='project2' smooth={true} duration={500} spy={true} exact='true' offset={-90}>Projects</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">Contact</NavLinks>
+              <NavLinks to='contact' smooth={true} duration={500} spy={true} exact='true'  offset={-90}>Contact</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
@@ -136,6 +140,11 @@ const NavLinks = styled(LinkScroll) `
     transition-duration: 0.2s;
     transition-property: transform; 
     
+    &.active {
+      border-bottom: 2px solid var(--color-borders);
+      transform: scale(1.1);
+      color: var(--color-title);
+    }
     &:hover {
       border-bottom: 2px solid var(--color-borders);
       transform: scale(1.1);

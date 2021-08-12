@@ -17,7 +17,7 @@ function Sidebar({ isOpen, toggle }) {
                     <SidebarLink to="about" isOpen={ isOpen } onClick={ toggle }>
                         About
                     </SidebarLink>
-                    <SidebarLink to="projects" isOpen={ isOpen } onClick={ toggle }>
+                    <SidebarLink to="project" isOpen={ isOpen } onClick={ toggle }>
                         Projects
                     </SidebarLink>
                     <SidebarLink to="contact" isOpen={ isOpen } onClick={ toggle }>

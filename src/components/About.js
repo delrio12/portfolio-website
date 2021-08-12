@@ -3,6 +3,7 @@ import styled from 'styled-components'
 // import './About.css'
 // import GetAppIcon from '@material-ui/icons/GetApp'
 import { Button } from './Button'
+import InstagramIcon from '@material-ui/icons/Instagram';
 // import { homeObjOne } from '../components/Data'
 // class About extends React.Component {
 
@@ -65,7 +66,7 @@ import { Button } from './Button'
 
 // import React from 'react'
 
-const About = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, buttonLabel1, buttonLabel2, description, img, alt, primary, dark, dark2 }) => {
+const About = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, html5, css3, javascript, react, materialui, firebase, styledcomponents, bootstrap, buttonLabel1, buttonLabel2, description, img, alt, primary, dark, dark2 }) => {
     return (
         <>
         <InfoContainer lightBg={lightBg} id={id} >
@@ -73,9 +74,18 @@ const About = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, b
                 <InfoRow imgStart={imgStart}>
                     <Column1>
                         <TextWrapper>
-                            <TopLine>{ topLine }</TopLine>
+                            <TopLine darkText={darkText}>{topLine}</TopLine>
                             <Heading lightText={lightText}> {headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
+                            <ListWrapper>
+                                <ListElement src={html5} /> 
+                                <ListElement src={css3} />
+                                <ListElement src={javascript} />
+                                <ListElement src={react} />
+                                <ListElement src={styledcomponents} />
+                                <ListElement src={materialui} />
+                                <ListElement src={firebase} />
+                            </ListWrapper>
                             <BtnWrap>
                                 <Button to='home'
                                 smooth={true}
@@ -101,7 +111,7 @@ const About = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, b
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                        <Img src={img} alt={alt}/>
+                        <Img darkText={darkText} src={img} alt={alt}/>
                         </ImgWrap>
                     </Column2>
                 </InfoRow>
@@ -160,7 +170,7 @@ const TextWrapper = styled.div `
 `
 
 const TopLine = styled.p `
-    color: var(--color-borders);
+    color: ${({ darkText }) => (darkText ? 'var(--color-background2)' : "var(--color-borders)")};
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -184,7 +194,7 @@ color: ${({ lightText }) => (lightText ? "white" : "black")};
 
 const Subtitle = styled.p `
     max-width: 440px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 24px;
     color: ${({ darkText }) => (darkText ? 'var(--color-background)' : "var(--color-subtitle)")};
@@ -203,4 +213,27 @@ const Img = styled.img `
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: ${({ darkText }) => (darkText ? '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' : '0 2px 4px 0 #1cd3bd, 0 2px 10px 0 #20fae0')};
+        text-align: center;
+        top: -1px;
+        transition: 0.3s;
+        
+    }
+`
+
+const ListWrapper = styled.div `
+    max-width: 440px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+   
+`
+const ListElement = styled.img `
+    margin-bottom: 20px;
 `

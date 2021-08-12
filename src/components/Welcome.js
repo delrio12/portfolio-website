@@ -6,7 +6,7 @@ import Video from '../img/video.mp4'
 const Welcome = () => {
     
     return (
-        <WelcomeContainer>
+        <WelcomeContainer> 
             <WelcomeBg>
                 <VideoBg autoPlay loop muted src={ Video } type="video/mp4" />
             </WelcomeBg>
