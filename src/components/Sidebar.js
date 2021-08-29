@@ -11,13 +11,13 @@ function Sidebar({ isOpen, toggle }) {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="/" isOpen={ isOpen } onClick={ toggle }>
+                    <SidebarLink to="home" isOpen={ isOpen } onClick={ toggle }>
                         Home
                     </SidebarLink>
                     <SidebarLink to="about" isOpen={ isOpen } onClick={ toggle }>
                         About
                     </SidebarLink>
-                    <SidebarLink to="project" isOpen={ isOpen } onClick={ toggle }>
+                    <SidebarLink to="projects" isOpen={ isOpen } onClick={ toggle }>
                         Projects
                     </SidebarLink>
                     <SidebarLink to="contact" isOpen={ isOpen } onClick={ toggle }>
@@ -30,6 +30,8 @@ function Sidebar({ isOpen, toggle }) {
 }
 
 export default Sidebar
+
+// ********* STYLED COMPONENTS ************
 
 const SidebarContainer = styled.aside `
     position: fixed;

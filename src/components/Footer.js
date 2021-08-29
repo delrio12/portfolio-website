@@ -41,6 +41,7 @@ function Footer() {
 export default Footer
 
 // ********* STYLED COMPONENTS ************
+
 const FooterContainer = styled.footer `
     background-color: #000;
 `
@@ -73,6 +74,7 @@ const WebsiteRights = styled.small `
     color: var(--color-subtitle);
     margin: 16px 0;
     font-weight: 300;
+    cursor: pointer;
 `
 
 const SocialIcons = styled.div `

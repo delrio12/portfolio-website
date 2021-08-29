@@ -3,13 +3,13 @@ import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
 import MenuIcon from '@material-ui/icons/Menu'
-import { animateScroll as scroll } from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll'
 
 function Navbar({ toggle }) { 
   const [ scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
-    if(window.scrollY >= 90) {
+    if(window.scrollY >= 70) {
       setScrollNav(true)
     } else {
       setScrollNav(false)
@@ -33,13 +33,13 @@ function Navbar({ toggle }) {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='about' smooth={true} duration={500} spy={true} exact='true' offset={-90}>About</NavLinks>
+              <NavLinks to='home' smooth={true} duration={500} spy={true} exact='true' offset={-70}>About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='project2' smooth={true} duration={500} spy={true} exact='true' offset={-90}>Projects</NavLinks>
+              <NavLinks to='projects' smooth={true} duration={500} spy={true} exact='true' offset={-70}>Projects</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to='contact' smooth={true} duration={500} spy={true} exact='true'  offset={-90}>Contact</NavLinks>
+              <NavLinks to='contact' smooth={true} duration={500} spy={true} exact='true'  offset={-70}>Contact</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
@@ -50,10 +50,12 @@ function Navbar({ toggle }) {
 
 export default Navbar
 
+// ********* STYLED COMPONENTS ************
+
 const Nav = styled.nav`
   background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
-  height: 90px;
-  margin-top: -90px; 
+  height: 70px;
+  margin-top: -70px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,11 +67,12 @@ const Nav = styled.nav`
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
+
 `
 const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 90px;
+  height: 70px;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
@@ -95,6 +98,7 @@ const NavLogo = styled(LinkRouter) `
     &:hover {
       transform: scale(1.1);
     }
+
 `
 
 const MobileIcon = styled.div `
@@ -109,6 +113,7 @@ const MobileIcon = styled.div `
     cursor: pointer;
     color: var(--color-title);
   }
+
 `
 
 const NavMenu = styled.ul `
@@ -122,10 +127,12 @@ const NavMenu = styled.ul `
   @media screen and (max-width: 768px) {
     display: none;
   }
+
 `
 
 const NavItem = styled.li `
-  height: 90px;
+  height: 70px;
+  
 `
 
 const NavLinks = styled(LinkScroll) `
