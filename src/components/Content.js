@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
+import About from './About';
 import Home from './Home';
 import Projects from './Projects';
 import Footer from './Footer';
@@ -17,6 +18,7 @@ function Content() {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <Home />
+            <About />
             <Projects {...homeObjOne}/>
             <Projects {...homeObjTwo}/>
             <Projects {...homeObjThree}/>

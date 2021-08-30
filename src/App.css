@@ -13,8 +13,8 @@ body {
   background-color: var(--color-background) !important;
   
   --color-background: #040c0f;
-  --color-background2:#16202a;
-
+  --color-background2: #16202a;
+  --color-background3: #B7CDDB;
   --color-main:#292F36;
   --color-second: #5c748d;
 

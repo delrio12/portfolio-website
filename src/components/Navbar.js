@@ -33,7 +33,7 @@ function Navbar({ toggle }) {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to='home' smooth={true} duration={500} spy={true} exact='true' offset={-70}>About</NavLinks>
+              <NavLinks to='about' smooth={true} duration={500} spy={true} exact='true' offset={-70}>About</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to='projects' smooth={true} duration={500} spy={true} exact='true' offset={-70}>Projects</NavLinks>
