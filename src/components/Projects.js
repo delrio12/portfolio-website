@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Button'
 
-const Projects = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, html5, css3, javascript, react, materialui, firebase, styledcomponents, bootstrap, buttonLabel1, buttonLabel2, description, img, alt, primary, dark, dark2, link, elements }) => {
+const Projects = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, html5, css3, javascript, react, materialui, firebase, styledcomponents, bootstrap, buttonLabel1, buttonLabel2, description, img, alt, primary, dark, dark2, link1, link2, elements }) => {
     
     return (
         <>
-        <InfoContainer lightBg={lightBg} id='projects' >
+        <InfoContainer lightBg={lightBg} id={id} >
             <InfoWrapper>
                 <InfoRow imgStart={imgStart}>
                     <Column1>
@@ -23,7 +23,7 @@ const Projects = ({lightBg, id, imgStart, topLine, lightText, headline, darkText
                                 <ListElement src={firebase} />
                             </ListWrapper>
                             <BtnWrap>
-                                <Button to='home'
+                                <Button onClick={() => window.open(link1)}
                                 smooth={true}
                                 duration={500}
                                 spy={true}
@@ -32,7 +32,7 @@ const Projects = ({lightBg, id, imgStart, topLine, lightText, headline, darkText
                                 primary={primary ? 1 : 0}
                                 dark={dark ? 1 : 0}
                                 dark2={dark2 ? 1 : 0}>{buttonLabel1} </Button>
-                                <Button to='home'
+                                <Button onClick={() => window.open(link2)}
                                 smooth={true}
                                 duration={500}
                                 spy={true}
@@ -47,7 +47,7 @@ const Projects = ({lightBg, id, imgStart, topLine, lightText, headline, darkText
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                        <Img darkText={darkText} src={img} alt={alt}/>
+                        <Img darkText={darkText} onClick={() => window.open(link1)} src={img} alt={alt}/>
                         </ImgWrap>
                     </Column2>
                 </InfoRow>
