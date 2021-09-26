@@ -97,6 +97,7 @@ const Column1 = styled.div `
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+    padding-left: 110px;
 
 `
 const Column2 = styled.div `
