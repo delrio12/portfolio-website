@@ -57,6 +57,7 @@ const Projects = ({lightBg, id, imgStart, topLine, lightText, headline, darkText
     )
 }
 
+
 export default Projects
 
 // ********* STYLED COMPONENTS ************
@@ -98,6 +99,13 @@ const Column1 = styled.div `
     padding: 0 15px;
     grid-area: col1;
     padding-left: 110px;
+    @media screen and (max-width: 768px) {
+        padding-left: 0px;
+    }
+
+    @media screen and (max-width: 480px) {
+        padding-left: 0px;
+    }
 
 `
 const Column2 = styled.div `

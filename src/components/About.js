@@ -2,18 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Button'
 
-const About = ({img, alt, resume}) => {
+const About = ({img, alt, resume, linkedin}) => {
     return (
         <>
         <AboutContainer id='about'> 
-            {/* <AboutBg>
-                <VideoBg autoPlay loop muted src={ Video } type="video/mp4" />
-            </AboutBg> */}
             <AboutWrapper>
-                <Heading>About Me</Heading>
+                <AboutRow0>
+                    <Heading>About Me</Heading>
+                </AboutRow0>
+                
                 <AboutRow1>
                     <Summary>
-                    Nisi quis magna ad consectetur labore magna irure. Mollit eiusmod veniam et ipsum dolor adipisicing Lorem occaecat excepteur ex quis est sit officia. Non occaecat irure cillum et duis. Qui in non minim laboris. Est voluptate incididunt mollit qui.
+                    Hello! My name is Andres Del Rio and I am a Computer programmer that enjoys creating websites.  I'm Specialized in ReactJS, with an emphasis on cross-platform compatibility. Skilled in Problem-solving, critical thinking, and teamwork. Bilingual in English and Spanish.
                     </Summary>
                 </AboutRow1>
                 <AboutRow2>
@@ -58,7 +58,8 @@ const About = ({img, alt, resume}) => {
                         </Column2>
                 </AboutRow2>
                 <AboutRow3>
-                    <Button onClick={() => window.open(resume)}>Resume</Button>
+                    <Button onClick={() => downloadFile(resume)}>Resume</Button>
+                    <Button onClick={() => window.open(linkedin)}>LinkedIn</Button>
                 </AboutRow3>
             </AboutWrapper>
 
@@ -68,9 +69,17 @@ const About = ({img, alt, resume}) => {
     )
 }
 
+function downloadFile(filePath){
+    var link=document.createElement('a');
+    link.href = filePath;
+    link.download = filePath.substr(filePath.lastIndexOf('/') + 1);
+    link.click();
+}
+
 export default About
 
 // ********* STYLED COMPONENTS ************
+
 
 const Heading = styled.h1 `
     width: 100%;
@@ -90,21 +99,27 @@ const Heading = styled.h1 `
 `
 
 const AboutContainer = styled.div`
+
+    width: 100%;
     background: var(--color-subtitle);
     
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        height: 960px;
+        position: relative;
     }
 
 `
 
-const AboutBg = styled.div`
-    background: var(--color-subtitle);
-    max-width: 1400px;
-`
-
 const AboutWrapper = styled.div`
+
+    
     display:grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    align-items: center;
     z-index: 1;
     height: 860px;
     width: 100%;
@@ -114,44 +129,97 @@ const AboutWrapper = styled.div`
     padding: 0 24px;
     justify-content: center;
     padding-top: 60px;
+    @media screen and (max-width: 768px) {
+        padding: 0 30px;
+        height: 960px;
+        grid-auto-columns: minmax(auto, auto);
+        align-items: center;
+        grid-template-areas: 
+            'row0'
+            'row1'
+            'row2'
+            'row3';
+    }
 
 `
-const AboutRow1 = styled.div`
+
+const AboutRow0 = styled.div`
     min-width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
+    @media screen and (max-width: 768px) {
+        grid-area: row0;
+        
+    }
     
+    
+`
+const AboutRow1 = styled.div`
+    width: 100%;
+
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+        grid-area: row1;
+        max-width: 600px;
+    }
 
 `
 
 const Summary = styled.div`
+    display: flex;
     align-text: center;
+    justify-content: center;
+    width: 100%;
     min-width: 80%;
-    display: grid;
     max-width: 800px;
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 24px;
 
+    @media screen and (max-width: 768px) {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    @media screen and (max-width: 480px) {
+        position: relative;
+        width: 100%;
+    }
+
 `
 
 const AboutRow2 = styled.div`
+    width: 100%;
+    
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
     grid-template-areas: 'col2 col1';
 
     @media screen and (max-width:768px) {
-        grid-template-areas: 'col2' 'col1';
+        grid-area: row2;
+        grid-auto-columns: minmax(auto, 1fr);
+        align-items: center;
+        grid-template-areas: 
+            'col2'
+            'col1';
     }
 
 `
 
 const AboutRow3 = styled.div`
+height: 40px;
 display: flex;
 justify-content: center;
 align-items: center;
-height: 40px;
+@media screen and (max-width: 768px) {
+    grid-area: row3;
+}
 `
 
 
@@ -234,11 +302,16 @@ border-bottom-right-radius:10px;
 `
 
 const ImgWrap = styled.div `
+    width: 100%;
     max-width: 555px;
     height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    @media screen and (max-width: 480px) {
+        max-width: 400px;
+        justify-content: flex;
+    }
 `
 
 const Img = styled.img `
@@ -251,7 +324,11 @@ const Img = styled.img `
     border-bottom-left-radius: 100px;
     position: relative;
     top: 0;
-    
     cursor: pointer;
+    @media screen and (max-width: 480px) {
+        max-width: 400px;
+        width: 50%;
+        justify-content: flex;
+    }
 
 `

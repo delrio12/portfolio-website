@@ -5,10 +5,10 @@ export const homeObjOne = {
     lightTextDesc: true,
     topLine: 'Projects',
     headline: 'Personal Portfolio',
-    description: 'Built my personal portfolio website. Using HTML, CSS, React, styled-components.',
+    description: 'My personal portfolio website built with React and styled-components.',
     link1: "https://www.andresdelrio.dev",
     link2: "https://github.com/delrio12/portfolio-website",
-    
+    isHtml5: true,
     html5:require('../img/html-5.svg'),
     css3:require('../img/css3.svg'),
     javascript:require('../img/javascript.svg'),
@@ -34,7 +34,7 @@ export const homeObjTwo = {
     lightTextDesc: false,
     topLine: 'Projects',
     headline: 'Twitter Clone',
-    description: 'Built a clone of the Twitter homepage.',
+    description: 'A clone of Twitter main page with working tweet box built with React and deployed using Firebase.',
     link1: "https://delrio12.github.io/twitter-clone/",
     link2: "https://github.com/delrio12/twitter-clone",
     html5:require('../img/html-5.svg'),
@@ -60,7 +60,7 @@ export const homeObjThree = {
     lightTextDesc: true,
     topLine: 'Projects',
     headline: 'Telsa Clone',
-    description: 'Built a tesla landing page clone.',
+    description: 'A simple Tesla clone built with React, Redux and Styled-components.',
     link1: "https://delrio12.github.io/tesla-clone/",
     link2: "https://github.com/delrio12/tesla-clone",
     html5:require('../img/html-5.svg'),
@@ -81,5 +81,7 @@ export const homeObjThree = {
 }
 
 export const about = {
-    img: require('../img/cartoon2.png')
+    img: require('../img/cartoon2.png'),
+    linkedin: "https://www.linkedin.com/in/andresdelrio11",
+    resume: '../img/AndresDelRio.pdf'
 }

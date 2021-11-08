@@ -45,6 +45,14 @@ export default Contact
 // ********* STYLED COMPONENTS ************
 
 const ContactContainer = styled.div `
+
+    
+    
+    
+  
+  
+    
+
     background: #B7CDDB;
     display: flex;
     justify-content: center;
@@ -79,6 +87,16 @@ const ContactForm = styled.form`
     grid-template-columns: 1fr 1fr; 
     grid-gap: 20px; 
     margin: 40px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 0px;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+        margin: 0px;
+    }
     
 `
 

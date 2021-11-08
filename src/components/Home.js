@@ -11,7 +11,7 @@ const Home = () => {
             <HomeContent>
                 <HomeP>Hey, I'm</HomeP>
                 <HomeH1>Andres Del Rio.</HomeH1>
-                <HomeP>A Web Developer &amp; Programmer based in Canada. I enjoy bringing ideas to life by creating websites, applications, or anything in between.</HomeP>
+                <HomeP>A Programmer &amp; Web Developer based in Canada. I enjoy bringing ideas to life by creating websites, applications, or anything in between.</HomeP>
             </HomeContent>
         </HomeContainer>
     )
@@ -31,6 +31,17 @@ const HomeContainer = styled.div`
     position: relative;
     z-index: 1;
     
+    @media screen and (max-width: 768px) {
+        height: 100vh;
+        overflow: auto;
+        max-height: 812px;
+    }
+
+    @media screen and (max-width: 480px) {
+        max-height: 812px;
+        height: 100vh;
+        overflow: auto;
+    }
 `
 
 const HomeBg = styled.div `
@@ -56,6 +67,7 @@ const VideoBg =  styled.video `
 
 const HomeContent = styled.div `
     z-index: 3;
+    width: 100%;
     max-width: 1500px;
     position: absolute;
     padding: 8px 24px;
@@ -64,6 +76,14 @@ const HomeContent = styled.div `
     align-items: center; 
     text-align: center;
     color: var(--color-title);
+
+    @media screen and (max-width: 768px) {
+        position: relative;
+    }
+
+    @media screen and (max-width: 480px) {
+        position: relative;
+    }
 
 `
 
