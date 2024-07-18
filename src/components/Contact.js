@@ -31,7 +31,7 @@ const Contact = () => {
                     </WrapperGrid>
                     <WrapperGrid full>
                         <ButtonContainer>
-                            <Button>Submit</Button>
+                            <Button type="submit" name="submit" value="Submit">Submit</Button>
                         </ButtonContainer>
                     </WrapperGrid>
                 </ContactForm>

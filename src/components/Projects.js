@@ -1,8 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Button'
+import html5 from '../img/html-5.svg';
+import css3 from '../img/css3.svg';
+import javascript from '../img/javascript.svg';
+import react from '../img/react.svg';
+import materialui from '../img/material-ui.svg';
+import firebase from '../img/firebase.svg';
 
-const Projects = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, html5, css3, javascript, react, materialui, firebase, styledcomponents, bootstrap, buttonLabel1, buttonLabel2, description, img, alt, primary, dark, dark2, link1, link2, elements }) => {
+const Projects = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, styledcomponents, bootstrap, buttonLabel1, buttonLabel2, description, img, alt, primary, dark, dark2, link1, link2, isHtml5, isCss3, isJavascript, isReact, isFirebase, isMaterialui, isRedux}) => {
     
     return (
         <>
@@ -15,12 +21,24 @@ const Projects = ({lightBg, id, imgStart, topLine, lightText, headline, darkText
                             <Heading lightText={lightText}> {headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <ListWrapper>
-                                <ListElement src={html5} /> 
-                                <ListElement src={css3} />
-                                <ListElement src={javascript} />
-                                <ListElement src={react} />
-                                <ListElement src={materialui} />
-                                <ListElement src={firebase} />
+                                <ListHtml 
+                                src={html5}
+                                isHtml5={isHtml5 ? 1 : 0} /> 
+                                <ListCss3 
+                                src={css3}
+                                isCss3={isCss3 ? 1 : 0} />
+                                <ListJavascript 
+                                src={javascript} 
+                                isJavascript={isJavascript ? 1 : 0}/>
+                                <ListReact 
+                                src={react} 
+                                isReact={isReact ? 1 : 0}/>
+                                <ListMaterialui 
+                                src={materialui} 
+                                isMaterialui={isMaterialui ? 1 : 0}/>
+                                <ListFirebase 
+                                src={firebase} 
+                                isFirebase={isFirebase ? 1 : 0}/>
                             </ListWrapper>
                             <BtnWrap>
                                 <Button onClick={() => window.open(link1)}
@@ -191,10 +209,46 @@ const ListWrapper = styled.div `
     justify-content: flex-start;
    
 `
-const ListElement = styled.img `
+
+const ListHtml = styled.img `
     margin-bottom: 20px;
     width: 30px;
     margin-right: 10px;
     cursor: pointer;
-
+    display: ${({ isHtml5 }) => (isHtml5 ? 'block' : 'none')};
+`
+const ListCss3 = styled.img `
+    margin-bottom: 20px;
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: ${({ isCss3 }) => (isCss3 ? 'block' : 'none')};
+`
+const ListJavascript = styled.img `
+    margin-bottom: 20px;
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: ${({ isJavascript }) => (isJavascript ? 'block' : 'none')};
+`
+const ListReact = styled.img `
+    margin-bottom: 20px;
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: ${({ isReact }) => (isReact ? 'block' : 'none')};
+`
+const ListMaterialui = styled.img `
+    margin-bottom: 20px;
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: ${({ isMaterialui }) => (isMaterialui ? 'block' : 'none')};
+`
+const ListFirebase = styled.img `
+    margin-bottom: 20px;
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: ${({ isFirebase }) => (isFirebase ? 'block' : 'none')};
 `

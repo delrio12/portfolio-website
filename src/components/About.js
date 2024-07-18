@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Button } from './Button'
 
-const About = ({img, alt, resume, linkedin}) => {
+const About = ({img, alt, resume, linkedin, summary}) => {
     return (
         <>
         <AboutContainer id='about'> 
@@ -10,55 +10,52 @@ const About = ({img, alt, resume, linkedin}) => {
                 <AboutRow0>
                     <Heading>About Me</Heading>
                 </AboutRow0>
-                
                 <AboutRow1>
-                    <Summary>
-                    Hello! My name is Andres Del Rio and I am a Computer programmer that enjoys creating websites.  I'm Specialized in ReactJS, with an emphasis on cross-platform compatibility. Skilled in Problem-solving, critical thinking, and teamwork. Bilingual in English and Spanish.
-                    </Summary>
+                    <Summary> {summary} </Summary>
                 </AboutRow1>
                 <AboutRow2>
-                        <Column1>
-                            
-                                <TopLine>
-                                    SKILLS
-                                </TopLine>
-                            
-                            <Skills>
-                                <HtmlSkillBar>
-                                    <H3>HTML</H3>
-                                    <Progress />
-                                    <P>90%</P>
-                                </HtmlSkillBar>
-                                <CssSkillBar>
-                                    <H3>CSS</H3>
-                                    <Progress />
-                                    <P>90%</P>
-                                </CssSkillBar>
-                                <JavascriptSkillBar>
-                                    <H3>JavaScript</H3>
-                                    <Progress />
-                                    <P>75%</P>
-                                </JavascriptSkillBar>
-                                <ReactSkillBar>
-                                    <H3>React</H3>
-                                    <Progress />
-                                    <P>70%</P>
-                                </ReactSkillBar>
-                                <BootstrapSkillBar>
-                                    <H3>Bootstrap</H3>
-                                    <Progress />
-                                    <P>65%</P>
-                                </BootstrapSkillBar> 
-                            </Skills>
-                        </Column1>
-                        <Column2>
-                            <ImgWrap>
-                                <Img src={img} alt={alt}/>
-                            </ImgWrap> 
-                        </Column2>
+                    <Column1>
+                        
+                            <TopLine>
+                                SKILLS
+                            </TopLine>
+                        
+                        <Skills>
+                            <HtmlSkillBar>
+                                <H3>HTML</H3>
+                                <Progress />
+                                <P>90%</P>
+                            </HtmlSkillBar>
+                            <CssSkillBar>
+                                <H3>CSS</H3>
+                                <Progress />
+                                <P>90%</P>
+                            </CssSkillBar>
+                            <JavascriptSkillBar>
+                                <H3>JavaScript</H3>
+                                <Progress />
+                                <P>75%</P>
+                            </JavascriptSkillBar>
+                            <ReactSkillBar>
+                                <H3>React</H3>
+                                <Progress />
+                                <P>70%</P>
+                            </ReactSkillBar>
+                            <BootstrapSkillBar>
+                                <H3>Bootstrap</H3>
+                                <Progress />
+                                <P>65%</P>
+                            </BootstrapSkillBar> 
+                        </Skills>
+                    </Column1>
+                    <Column2>
+                        <ImgWrap>
+                            <Img src={img} alt={alt}/>
+                        </ImgWrap> 
+                    </Column2>
                 </AboutRow2>
                 <AboutRow3>
-                    <Button onClick={() => downloadFile(resume)}>Resume</Button>
+                    <Button onClick={() => window.open(resume)}>Resume</Button>
                     <Button onClick={() => window.open(linkedin)}>LinkedIn</Button>
                 </AboutRow3>
             </AboutWrapper>
@@ -67,13 +64,6 @@ const About = ({img, alt, resume, linkedin}) => {
         </AboutContainer>
         </>
     )
-}
-
-function downloadFile(filePath){
-    var link=document.createElement('a');
-    link.href = filePath;
-    link.download = filePath.substr(filePath.lastIndexOf('/') + 1);
-    link.click();
 }
 
 export default About

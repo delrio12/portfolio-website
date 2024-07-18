@@ -8,15 +8,13 @@ export const homeObjOne = {
     description: 'My personal portfolio website built with React and styled-components.',
     link1: "https://www.andresdelrio.dev",
     link2: "https://github.com/delrio12/portfolio-website",
+    techs: ['html5', 'css3'],
     isHtml5: true,
-    html5:require('../img/html-5.svg'),
-    css3:require('../img/css3.svg'),
-    javascript:require('../img/javascript.svg'),
-    react:require('../img/react.svg'),
-    materialui:require('../img/material-ui.svg'),
-    firebase:require('../img/firebase.svg'),
-
-
+    isCss3: true,
+    isJavascript: true,
+    isReact: true,
+    isMaterialui: true,
+    isFirebase: true,
     buttonLabel1: 'Live Site',
     buttonLabel2: 'GitHub Rep',
     imgStart: false,
@@ -37,12 +35,12 @@ export const homeObjTwo = {
     description: 'A clone of Twitter main page with working tweet box built with React and deployed using Firebase.',
     link1: "https://delrio12.github.io/twitter-clone/",
     link2: "https://github.com/delrio12/twitter-clone",
-    html5:require('../img/html-5.svg'),
-    css3:require('../img/css3.svg'),
-    javascript:require('../img/javascript.svg'),
-    react:require('../img/react.svg'),
-    materialui:require('../img/material-ui.svg'),
-    firebase:require('../img/firebase.svg'),
+    isHtml5: true,
+    isCss3: true,
+    isJavascript: true,
+    isReact: true,
+    isMaterialui: true,
+    isFirebase: true,
     buttonLabel1: 'Live Site',
     buttonLabel2: 'GitHub Rep',
     imgStart: true,
@@ -63,12 +61,13 @@ export const homeObjThree = {
     description: 'A simple Tesla clone built with React, Redux and Styled-components.',
     link1: "https://delrio12.github.io/tesla-clone/",
     link2: "https://github.com/delrio12/tesla-clone",
-    html5:require('../img/html-5.svg'),
-    css3:require('../img/css3.svg'),
-    javascript:require('../img/javascript.svg'),
-    react:require('../img/react.svg'),
-    materialui:require('../img/material-ui.svg'),
-    firebase:require('../img/firebase.svg'),
+    isHtml5: true,
+    isCss3: true,
+    isJavascript: true,
+    isReact: true,
+    isMaterialui: true,
+    isFirebase: false,
+    isRedux: true,
     buttonLabel1: 'Live Site',
     buttonLabel2: 'GitHub Rep',
 
@@ -81,7 +80,23 @@ export const homeObjThree = {
 }
 
 export const about = {
-    img: require('../img/cartoon2.png'),
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolio-website-582f4.appspot.com/o/images%2Fcartoon2.png?alt=media&token=4d1642c4-6f18-4b00-a339-46203292e199",
     linkedin: "https://www.linkedin.com/in/andresdelrio11",
-    resume: '../img/AndresDelRio.pdf'
+    resume: "https://firebasestorage.googleapis.com/v0/b/portfolio-website-582f4.appspot.com/o/images%2FAndresDelRio.pdf?alt=media&token=d28190f6-4fac-4ad6-a586-700c2c67cce1",
+    summary: "Hello! My name is Andres Del Rio and I am a Computer programmer that enjoys creating websites. I'm Specialized in ReactJS, with an emphasis on cross-platform compatibility. Skilled in Problem-solving, critical thinking, and teamwork. Bilingual in English and Spanish."
+}
+
+
+export const home = {
+    description1: "Hey, I'm",
+    description2:"A Programmer &amp; Web Developer based in Canada. I enjoy bringing ideas to life by creating websites, applications, or anything in between.",
+    name: "Andres Del Rio." ,
+}
+
+
+export const footer = {
+    linkedin: "https://www.linkedin.com/in/andresdelrio11/",
+    github: "https://github.com/delrio12",
+    twitter: "https://twitter.com/DevRio11",
+    instagram: "https://www.instagram.com/andresdelrio11/",
 }

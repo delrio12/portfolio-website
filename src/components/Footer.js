@@ -5,7 +5,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
-function Footer() {
+function Footer(linkedin, github, twitter, instagram) {
     
     return (
         <>
@@ -14,16 +14,16 @@ function Footer() {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialIcons>
-                            <SocialIconLink href="https://www.linkedin.com/in/andresdelrio11/" target="_blank" aria-label="LinkedIn">
+                            <SocialIconLink href={linkedin} target="_blank" aria-label="LinkedIn">
                             <LinkedInIcon/>
                             </SocialIconLink>
-                            <SocialIconLink href="https://github.com/delrio12" target="_blank" aria-label="Github">
+                            <SocialIconLink href={github} target="_blank" aria-label="Github">
                             <GitHubIcon/>
                             </SocialIconLink>
-                            <SocialIconLink href="https://twitter.com/DevRio11" target="_blank" aria-label="Twitter">
+                            <SocialIconLink href={twitter} target="_blank" aria-label="Twitter">
                             <TwitterIcon/>
                             </SocialIconLink>
-                            <SocialIconLink href="https://www.instagram.com/andresdelrio11/" target="_blank" aria-label="Instagram">
+                            <SocialIconLink href={instagram} target="_blank" aria-label="Instagram">
                             <InstagramIcon/>
                             </SocialIconLink>
                         </SocialIcons>
@@ -82,7 +82,7 @@ const SocialIcons = styled.div `
     justify-content: space-between;
     align-items: center;
     max-width: 800px;
-    
+    cursor: pointer;
 `
 
 const SocialIconLink = styled.a `

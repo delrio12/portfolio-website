@@ -1,17 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import Video from '../img/video.mp4'
 
-const Home = () => {
+const Home = ({name, description1, description2}) => {
     return (
         <HomeContainer id='home'> 
             <HomeBg>
-                <VideoBg autoPlay loop muted src={ Video } type="video/mp4" />
+                <VideoBg autoPlay loop muted src={ "https://firebasestorage.googleapis.com/v0/b/portfolio-website-582f4.appspot.com/o/images%2Fvideo.mp4?alt=media&token=9f68981a-5da8-4cab-b820-504cf6208f83"} type="video/mp4" />
             </HomeBg>
             <HomeContent>
-                <HomeP>Hey, I'm</HomeP>
-                <HomeH1>Andres Del Rio.</HomeH1>
-                <HomeP>A Programmer &amp; Web Developer based in Canada. I enjoy bringing ideas to life by creating websites, applications, or anything in between.</HomeP>
+                <HomeP>{description1}</HomeP>
+                <HomeH1>{name}</HomeH1>
+                <HomeP>{description2}</HomeP>
             </HomeContent>
         </HomeContainer>
     )
@@ -19,7 +18,12 @@ const Home = () => {
 
 export default Home
 
-// ********* STYLED COMPONENTS ************
+
+
+
+
+
+// ******************************************** STYLED COMPONENTS *********************************************
 
 const HomeContainer = styled.div`
     background: var(--color-background);
